@@ -41,6 +41,10 @@ body {
     background-color: #f7f4f3;
 }
 
+.moves-high-score p {
+    font-size: 32px;
+}
+
 /* memory */
 .memory-game {
     height: 550px;
