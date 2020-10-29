@@ -1,0 +1,33 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+/* body */
+body {
+    background-color: #dbcbbd;
+}
+
+/* columns */
+.column-padding {
+    padding: 20px;
+}
+
+/* logo */
+.logo {
+    height: 250px;
+    padding: 20px;
+    background-color: #dbcbbd;
+}
+
+/* high score */
+.high-score {
+    height: 300px;
+    padding: 20px;
+    background-color: #f7f4f3;
+}
+
+/* memory */
+.memory-game {
+    height: 550px;
+    padding: 20px;
+    background-color: #c5fe9a;
+}
