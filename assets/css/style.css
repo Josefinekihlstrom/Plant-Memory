@@ -93,6 +93,13 @@ body {
 /* memory */
 .memory-game {
     height: 550px;
+    width: 550px;
     padding: 20px;
     background-color: #c5fe9a;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.memory-card img {
+    width: 120px;
 }
