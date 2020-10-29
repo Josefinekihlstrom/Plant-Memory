@@ -47,6 +47,7 @@ body {
 
 .icons {
     font-size: 32px;
+    margin-bottom: 20px;
     display: inline-block;
     text-align:center;
     width: 100%;
@@ -55,6 +56,37 @@ body {
 .icons i {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.moves-high-score {
+    margin-bottom: 20px;
+}
+
+.theme-buttons {
+    display: inline-block;
+    text-align:center;
+    width: 100%;
+}
+
+.btn-light {
+    background-color: #dbcbbd;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.btn-light:hover {
+    background-color: #dbcbbd;
+}
+
+.btn-dark {
+    background-color: #14110f;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.btn-dark:hover {
+    background-color: #14110f;
 }
 
 /* memory */
