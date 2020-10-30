@@ -120,6 +120,12 @@ body {
     height: 120px;
     margin: 10px;
     position: relative;
+    transform: scale(1);
+}
+
+.memory-card:active {
+    transform: scale(.95);
+    transition: transform .25s;
 }
 
 .card-front,
