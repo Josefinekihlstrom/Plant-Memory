@@ -101,13 +101,42 @@ body {
 }
 
 /* memory */
+
+.game-section {
+    position: relative;
+}
+
+.start-game {
+    position: absolute;
+    height: 560px;
+    width: 565px;
+    background-color: #c5fe9a;
+    z-index: 1;
+}
+
+.play-button {
+    text-align: center;
+    margin-top: 170px;
+    
+}
+
+.play-button h2 {
+    font-size: 70px;
+}
+
+.fa-play-circle {
+    font-size: 150px;
+}
+
 .memory-game {
     height: 560px;
     width: 565px;
+    margin-right: 0px;
+    margin-left: 0px;
     display: flex;
     flex-wrap: wrap;
     background-color: #c5fe9a;
-    
+    perspective: 1000px;
 }
 
 .memory-card img {
@@ -121,6 +150,8 @@ body {
     margin: 10px;
     position: relative;
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .3s;
 }
 
 .memory-card:active {
@@ -133,4 +164,14 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    transform: rotateY(180deg);
+}
+
+/* memory card flipping */
+.memory-card.flip {
+    transform: rotateY(180deg);
 }
