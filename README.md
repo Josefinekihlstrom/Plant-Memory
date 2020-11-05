@@ -40,6 +40,7 @@ to turn the sounds completely off) and a pop up when the game is finished.
 ### Acknowledgements
 #### Pages used to find information
 #### Code
+[start the game](https://stackoverflow.com/questions/5299895/jquery-detecting-and-removing-an-element-clicked)
 #### Thank you
 
 ### Disclaimer
