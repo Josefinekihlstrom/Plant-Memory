@@ -110,7 +110,8 @@ body {
     position: absolute;
     height: 560px;
     width: 565px;
-    background-color: #c5fe9a;
+    background-color: rgb(197, 254, 154, .8);
+    
     z-index: 1;
 }
 
