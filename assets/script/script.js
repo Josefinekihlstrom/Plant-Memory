@@ -1,8 +1,18 @@
+/* ---------- Audio variables ---------- */
+
+var clickAudio = new Audio('assets/audio/click-card.mp3');
+var matchCardAudio = new Audio('assets/audio/cards-match.wav');
+var winAudio = new Audio('assets/audio/win-game.wav');
+var backgroundAudio = new Audio('assets/audio/background-sound.mp3');
+
+backgroundAudio.volume = 0.3;
+
 /* ---------- Starting the game ---------- */
 
 // When clicking on the play button the start-game div disappears
 $(".start-game").on("click", function () {
   $(this).remove();
+  backgroundAudio.play();
 
   // timer also starts after clicking the play button
   const startingTime = 0;
@@ -29,14 +39,10 @@ let boardLocked = false;
 let firstCard;
 let secondCard;
 
-var clickSound = new Audio('assets/sound/click-card.mp3');
-var matchCardSound = new Audio('assets/sound/cards-match.wav');
-var winSound = new Audio('assets/sound/win-game.wav');
-
 // flips the cards
 $(cards).on('click', function cardFlip() {
 
-    clickSound.play();
+    clickAudio.play();
     // lock the board if true
     if (boardLocked) return;
     // to avoid dubble click on first card
@@ -64,7 +70,7 @@ function checkMatch() {
 
     // if cards match go to disableCards function
     if (firstCard.dataset.id === secondCard.dataset.id) {
-        matchCardSound.play();
+        matchCardAudio.play();
         disableCards();
     } else {
         // if cards don't match go to unflipCards function
@@ -88,7 +94,7 @@ function unflipCards() {
         $(firstCard).removeClass('flip');
         $(secondCard).removeClass('flip');
 
-        clickSound.play();
+        clickAudio.play();
         boardReset();
     }, 1200);
 }
