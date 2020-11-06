@@ -7,12 +7,28 @@ var backgroundAudio = new Audio('assets/audio/background-sound.mp3');
 
 backgroundAudio.volume = 0.3;
 
+// help from https://www.youtube.com/watch?v=wffK2OIt8u0
+var playPauseIcon = document.getElementById('play-pause');
+var count = 0;
+
+function playPause() {
+    
+    if(count === 0) {
+        count = 1;
+        backgroundAudio.play();
+        playPauseIcon.className = "fas fa-volume-up";
+    } else {
+        count = 0;
+        backgroundAudio.pause();
+        playPauseIcon.className = "fas fa-volume-mute";
+    }
+}
+
 /* ---------- Starting the game ---------- */
 
 // When clicking on the play button the start-game div disappears
 $(".start-game").on("click", function () {
   $(this).remove();
-  backgroundAudio.play();
 
   // timer also starts after clicking the play button
   const startingTime = 0;
@@ -114,3 +130,4 @@ function boardReset() {
         card.style.order = randomNumber;
     });
 })();
+
