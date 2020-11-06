@@ -29,8 +29,14 @@ let boardLocked = false;
 let firstCard;
 let secondCard;
 
+var clickSound = new Audio('assets/sound/click-card.mp3');
+var matchCardSound = new Audio('assets/sound/cards-match.wav');
+var winSound = new Audio('assets/sound/win-game.wav');
+
 // flips the cards
 $(cards).on('click', function cardFlip() {
+
+    clickSound.play();
     // lock the board if true
     if (boardLocked) return;
     // to avoid dubble click on first card
@@ -58,6 +64,7 @@ function checkMatch() {
 
     // if cards match go to disableCards function
     if (firstCard.dataset.id === secondCard.dataset.id) {
+        matchCardSound.play();
         disableCards();
     } else {
         // if cards don't match go to unflipCards function
@@ -81,6 +88,7 @@ function unflipCards() {
         $(firstCard).removeClass('flip');
         $(secondCard).removeClass('flip');
 
+        clickSound.play();
         boardReset();
     }, 1200);
 }

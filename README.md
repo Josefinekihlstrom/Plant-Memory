@@ -28,6 +28,8 @@ to turn the sounds completely off) and a pop up when the game is finished.
 ### Testing
 #### Manual testing
 #### Bugs found
+* The cards wouldn't shuffle. Solved the problem by changing the cards variable value to javascript instead of jquery. 
+* Delay in sound effects, click sound also doesn't stop play when locked card is clicked. NOT SOLVED YET.
 
 ### Deployment
 #### Cloning this project
@@ -42,6 +44,7 @@ to turn the sounds completely off) and a pop up when the game is finished.
 #### Code
 [start the game](https://stackoverflow.com/questions/5299895/jquery-detecting-and-removing-an-element-clicked)
 [timer function](https://www.youtube.com/watch?v=x7WJEmxNlEs)
+Memory game structure with help from [freeCodeCamp.org](https://www.youtube.com/watch?v=ZniVgo8U7ek/)
 #### Thank you
 
 ### Disclaimer
