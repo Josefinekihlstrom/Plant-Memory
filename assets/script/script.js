@@ -25,25 +25,34 @@ $(".start-game").on("click", function () {
 const cards = $('.memory-card');
 
 let cardIsFlipped = false;
+let boardLocked = false;
 let firstCard;
 let secondCard;
 
 $(cards).on('click', function cardFlip() {
+    // lock the board if true
+    if (boardLocked) return;
+
     $(this).addClass('flip');
 
     if (!cardIsFlipped) {
         // the first card is clicked
         cardIsFlipped = true;
         firstCard = this;
-    } else {
+
+        return;
+    }
         // the second card is clicked
         cardIsFlipped = false;
         secondCard = this;
 
         checkMatch();
-    }
 });
+
 function checkMatch() {
+
+    let cardsMatch = firstCard.dataset.id === secondCard.dataset.id;
+
     // if cards match go to disableCards function
     if (firstCard.dataset.id === secondCard.dataset.id) {
         disableCards();
@@ -52,14 +61,21 @@ function checkMatch() {
         unflipCards();
     }
 }
+
 function disableCards() {
     $(firstCard).off('click', cardIsFlipped);
     $(secondCard).off('click', cardIsFlipped);
 }
+
 function unflipCards() {
+    // unlock after cards has been flipped
+    boardLocked = true;
+
     setTimeout(() => {
         $(firstCard).removeClass('flip');
         $(secondCard).removeClass('flip');
+
+        boardLocked = false;
     }, 1200);
 }
 
