@@ -24,8 +24,34 @@ $(".start-game").on("click", function () {
 
 const cards = $('.memory-card');
 
+let cardIsFlipped = false;
+let firstCard;
+let secondCard;
+
 $(cards).on('click', function cardFlip() {
-    $(this).toggleClass('flip');
+    $(this).addClass('flip');
+
+    if (!cardIsFlipped) {
+        // the first card is clicked
+        cardIsFlipped = true;
+        firstCard = this;
+    } else {
+        // the second card is clicked
+        cardIsFlipped = false;
+        secondCard = this;
+
+        // does the cards match?
+        if (firstCard.dataset.id === secondCard.dataset.id) {
+            $(firstCard).off('click', cardIsFlipped);
+            $(secondCard).off('click', cardIsFlipped);
+        } else {
+            // if cards don't match
+            setTimeout(() => {
+                $(firstCard).removeClass('flip');
+                $(secondCard).removeClass('flip');
+            }, 1200);
+        }
+    }
 });
 
 
