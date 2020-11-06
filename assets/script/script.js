@@ -4,8 +4,8 @@
 $(".start-game").on("click", function () {
   $(this).remove();
 
-  // countdown also starts after clicking the play button
-  const startingTime = 1;
+  // timer also starts after clicking the play button
+  const startingTime = 0;
   let time = startingTime * 60;
   const countDown = document.getElementById("timer");
   setInterval(startTime, 1000);
@@ -15,11 +15,7 @@ $(".start-game").on("click", function () {
     let seconds = time % 60;
     seconds = seconds < 10 ? "0" + seconds : seconds;
     countDown.innerHTML = `${minutes}:${seconds}`;
-    time--;
+    time++;
     time = time < 0 ? 0 : time;
-
-    if (time === 0) {
-      console.log('Time is up');
-    };
   };
 });
