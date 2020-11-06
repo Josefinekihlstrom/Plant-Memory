@@ -22,13 +22,14 @@ $(".start-game").on("click", function () {
 
 /* ---------- Playing the game ---------- https://www.youtube.com/watch?v=ZniVgo8U7ek/ */
 
-const cards = $('.memory-card');
+const cards = document.querySelectorAll('.memory-card');
 
 let cardIsFlipped = false;
 let boardLocked = false;
 let firstCard;
 let secondCard;
 
+// flips the cards
 $(cards).on('click', function cardFlip() {
     // lock the board if true
     if (boardLocked) return;
@@ -50,6 +51,7 @@ $(cards).on('click', function cardFlip() {
         checkMatch();
 });
 
+// checks for cards to match
 function checkMatch() {
 
     let cardsMatch = firstCard.dataset.id === secondCard.dataset.id;
@@ -63,6 +65,7 @@ function checkMatch() {
     }
 }
 
+//disables cards
 function disableCards() {
     $(firstCard).off('click', cardIsFlipped);
     $(secondCard).off('click', cardIsFlipped);
@@ -70,8 +73,8 @@ function disableCards() {
     boardReset();
 }
 
+// flip cards back
 function unflipCards() {
-    // unlock after cards has been flipped
     boardLocked = true;
 
     setTimeout(() => {
@@ -82,6 +85,7 @@ function unflipCards() {
     }, 1200);
 }
 
+// resets the board
 function boardReset() {
     cardIsFlipped = false;
     boardLocked = false;
@@ -89,3 +93,10 @@ function boardReset() {
     secondCard = null;
 }
 
+// shuffels cards
+(function shuffleCards() {
+    cards.forEach(card => {
+        let randomNumber = Math.floor(Math.random() * 16);
+        card.style.order = randomNumber;
+    });
+})();
