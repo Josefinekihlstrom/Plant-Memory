@@ -40,18 +40,27 @@ $(cards).on('click', function cardFlip() {
         cardIsFlipped = false;
         secondCard = this;
 
-        // does the cards match?
-        if (firstCard.dataset.id === secondCard.dataset.id) {
-            $(firstCard).off('click', cardIsFlipped);
-            $(secondCard).off('click', cardIsFlipped);
-        } else {
-            // if cards don't match
-            setTimeout(() => {
-                $(firstCard).removeClass('flip');
-                $(secondCard).removeClass('flip');
-            }, 1200);
-        }
+        checkMatch();
     }
 });
+function checkMatch() {
+    // if cards match go to disableCards function
+    if (firstCard.dataset.id === secondCard.dataset.id) {
+        disableCards();
+    } else {
+        // if cards don't match go to unflipCards function
+        unflipCards();
+    }
+}
+function disableCards() {
+    $(firstCard).off('click', cardIsFlipped);
+    $(secondCard).off('click', cardIsFlipped);
+}
+function unflipCards() {
+    setTimeout(() => {
+        $(firstCard).removeClass('flip');
+        $(secondCard).removeClass('flip');
+    }, 1200);
+}
 
 
