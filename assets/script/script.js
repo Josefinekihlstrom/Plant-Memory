@@ -19,3 +19,13 @@ $(".start-game").on("click", function () {
     time = time < 0 ? 0 : time;
   };
 });
+
+/* ---------- Playing the game ---------- https://www.youtube.com/watch?v=ZniVgo8U7ek/ */
+
+const cards = $('.memory-card');
+
+$(cards).on('click', function cardFlip() {
+    $(this).toggleClass('flip');
+});
+
+

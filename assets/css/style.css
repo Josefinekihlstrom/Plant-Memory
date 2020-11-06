@@ -1,4 +1,4 @@
-/* fonts */
+/* ---------- fonts ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 .amatic {
@@ -9,19 +9,19 @@
     margin: 0 auto;
 }
 
-/* body */
+/* ---------- body ---------- */
 body {
     background-color: #dbcbbd;
     height: 100vh;
     display: flex;
 }
 
-/* container */
+/* ---------- container ---------- */
 .container {
     margin: auto;
 }
 
-/* columns */
+/* ---------- columns ---------- */
 .column-padding {
     padding: 20px;
 }
@@ -45,7 +45,7 @@ body {
     margin-right: auto;
 }
 
-/* high score section */
+/* ---------- high score section ---------- */
 .high-score {
     height: 310px;
     padding: 20px;
@@ -100,13 +100,13 @@ body {
     background-color: #14110f;
 }
 
-/* memory */
+/* ---------- memory ---------- */
 
 .game-section {
     position: relative;
 }
 
-/* start game overlay */
+/* ---------- start game overlay ---------- */
 .start-game {
     position: absolute;
     height: 560px;
@@ -172,7 +172,7 @@ body {
     transform: rotateY(180deg);
 }
 
-/* memory card flipping */
+/* ---------- memory card flipping ---------- */
 .memory-card.flip {
     transform: rotateY(180deg);
 }
