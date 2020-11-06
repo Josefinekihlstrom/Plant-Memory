@@ -32,6 +32,8 @@ let secondCard;
 $(cards).on('click', function cardFlip() {
     // lock the board if true
     if (boardLocked) return;
+    // to avoid dubble click on first card
+    if (this === firstCard) return;
 
     $(this).addClass('flip');
 
@@ -43,7 +45,6 @@ $(cards).on('click', function cardFlip() {
         return;
     }
         // the second card is clicked
-        cardIsFlipped = false;
         secondCard = this;
 
         checkMatch();
@@ -65,6 +66,8 @@ function checkMatch() {
 function disableCards() {
     $(firstCard).off('click', cardIsFlipped);
     $(secondCard).off('click', cardIsFlipped);
+
+    boardReset();
 }
 
 function unflipCards() {
@@ -75,8 +78,14 @@ function unflipCards() {
         $(firstCard).removeClass('flip');
         $(secondCard).removeClass('flip');
 
-        boardLocked = false;
+        boardReset();
     }, 1200);
 }
 
+function boardReset() {
+    cardIsFlipped = false;
+    boardLocked = false;
+    firstCard = null;
+    secondCard = null;
+}
 
