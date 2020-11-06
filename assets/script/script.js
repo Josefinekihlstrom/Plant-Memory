@@ -77,6 +77,7 @@ $(cards).on('click', function cardFlip() {
         secondCard = this;
 
         checkMatch();
+        countMoves();
 });
 
 // checks for cards to match
@@ -92,6 +93,7 @@ function checkMatch() {
         // if cards don't match go to unflipCards function
         unflipCards();
     }
+
 }
 
 //disables cards
@@ -122,6 +124,16 @@ function boardReset() {
     firstCard = null;
     secondCard = null;
 }
+
+// count moves with help from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves/
+
+let counter = document.getElementById('moves');
+var moves = 0;
+
+ function countMoves() {
+     moves++;
+     counter.innerHTML = moves;
+ };
 
 // shuffels cards
 (function shuffleCards() {
