@@ -143,3 +143,8 @@ var moves = 0;
     });
 })();
 
+/* ---------- Restarting the game ---------- */
+
+function restartGame() {
+    location.reload();
+}
