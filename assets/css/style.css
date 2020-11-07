@@ -173,6 +173,16 @@ body {
     transform: rotateY(180deg);
 }
 
+/* ---------- game finished overlay ---------- */
+.overlay-finish {
+    position: absolute;
+    height: 560px;
+    width: 565px;
+    background-color: rgb(197, 254, 154, .8);
+    z-index: 10;
+    display: none;
+}
+
 /* ---------- memory card flipping ---------- */
 .memory-card.flip {
     transform: rotateY(180deg);

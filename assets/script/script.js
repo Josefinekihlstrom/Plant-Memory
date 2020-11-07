@@ -54,6 +54,7 @@ let cardIsFlipped = false;
 let boardLocked = false;
 let firstCard;
 let secondCard;
+let matches = 0;
 
 // flips the cards
 $(cards).on('click', function cardFlip() {
@@ -88,12 +89,17 @@ function checkMatch() {
     // if cards match go to disableCards function
     if (firstCard.dataset.id === secondCard.dataset.id) {
         matchCardAudio.play();
+        matches = matches + 1;
+
+        if (matches == 8) {
+            gameFinished();
+        }
+
         disableCards();
     } else {
         // if cards don't match go to unflipCards function
         unflipCards();
     }
-
 }
 
 //disables cards
@@ -148,3 +154,10 @@ var moves = 0;
 function restartGame() {
     location.reload();
 }
+
+/* ---------- Finishing the game ---------- */
+
+function gameFinished() {
+    console.log('hejhej');
+}
+
