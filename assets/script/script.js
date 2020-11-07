@@ -54,6 +54,7 @@ let cardIsFlipped = false;
 let boardLocked = false;
 let firstCard;
 let secondCard;
+let matches = 0;
 
 // flips the cards
 $(cards).on('click', function cardFlip() {
@@ -88,6 +89,13 @@ function checkMatch() {
     // if cards match go to disableCards function
     if (firstCard.dataset.id === secondCard.dataset.id) {
         matchCardAudio.play();
+        matches = matches + 1;
+
+        // if all 8 paires are matched
+        if (matches == 8) {
+            console.log('hejhej');
+        }
+
         disableCards();
     } else {
         // if cards don't match go to unflipCards function
