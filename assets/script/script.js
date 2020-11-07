@@ -91,6 +91,7 @@ function checkMatch() {
         matchCardAudio.play();
         matches = matches + 1;
 
+        // if all cards are paired
         if (matches == 8) {
             gameFinished();
         }
