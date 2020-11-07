@@ -97,6 +97,7 @@ function checkMatch() {
         }
 
         disableCards();
+
     } else {
         // if cards don't match go to unflipCards function
         unflipCards();
@@ -159,6 +160,6 @@ function restartGame() {
 /* ---------- Finishing the game ---------- */
 
 function gameFinished() {
-    console.log('hejhej');
+    $('.overlay-finish').show();
 }
 
