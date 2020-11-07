@@ -183,6 +183,10 @@ body {
     display: none;
 }
 
+.fa-trophy {
+    font-size: 150px;
+}
+
 /* ---------- memory card flipping ---------- */
 .memory-card.flip {
     transform: rotateY(180deg);

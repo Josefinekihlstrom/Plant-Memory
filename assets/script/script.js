@@ -160,6 +160,13 @@ function restartGame() {
 /* ---------- Finishing the game ---------- */
 
 function gameFinished() {
+    winAudio.play();
     $('.overlay-finish').show();
+
+    if (count === 1) {
+        count = 0;
+        backgroundAudio.pause();
+        playPauseIcon.className = "fas fa-volume-mute";
+    }
 }
 
