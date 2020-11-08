@@ -30,6 +30,7 @@ to turn the sounds completely off) and a pop up when the game is finished.
 #### Bugs found
 * The cards wouldn't shuffle. Solved the problem by changing the cards variable value to javascript instead of jquery. 
 * Delay in sound effects, click sound also doesn't stop play when locked card is clicked. NOT SOLVED YET.
+* clearInterval not working
 
 ### Deployment
 #### Cloning this project

@@ -91,8 +91,8 @@ function checkMatch() {
         matchCardAudio.play();
         matches = matches + 1;
 
-        // if all cards are paired
-        if (matches == 8) {
+        // if all cards are paired. Set to == 8 when project is finished! <------------------------------
+        if (matches == 2) { 
             gameFinished();
         }
 
@@ -168,5 +168,7 @@ function gameFinished() {
         backgroundAudio.pause();
         playPauseIcon.className = "fas fa-volume-mute";
     }
+
+    clearInterval(startTime); // not working! <------------------------------
 }
 
