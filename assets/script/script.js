@@ -40,6 +40,15 @@ function playPause() {
     }
 }
 
+$(function() {
+  $("#dark-theme").click(function() {
+    $("body").toggleClass("dark-mode");
+    $(".logo").toggleClass("dark-mode");
+    $(".logo h1").toggleClass("dark-mode");
+    $(".high-score").toggleClass("dark-mode");
+  });
+});
+
 /* ---------- Starting the game ---------- */
 
 // When clicking on the play button the start-game div disappears
