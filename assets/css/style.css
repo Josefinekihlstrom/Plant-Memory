@@ -107,6 +107,10 @@ body {
     position: relative;
 }
 
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
 /* ---------- start game overlay ---------- */
 .start-game {
     position: absolute;
@@ -187,7 +191,21 @@ body {
     font-size: 150px;
 }
 
-/* ---------- memory card flipping ---------- */
-.memory-card.flip {
-    transform: rotateY(180deg);
+/* ---------- dark theme ---------- */
+
+body.dark-mode {
+  background: #14110f;
+}
+
+.logo.dark-mode {
+    background: #14110f;
+}
+
+.logo h1.dark-mode {
+    color: #f7f4f3;
+}
+
+.high-score.dark-mode {
+    background-color: #0f6c2b;
+    color: #f7f4f3;
 }

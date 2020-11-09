@@ -26,6 +26,7 @@ timeHour.innerHTML = `00:0${timeSecond}`;
 let counter = document.getElementById('moves');
 var moves = 0;
 
+/* ---------- Left Section/Menu ---------- */
 function playPause() {
     
     if(count === 0) {
