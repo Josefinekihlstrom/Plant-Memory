@@ -65,6 +65,9 @@ $(function() {
 $(function() {
     $("#light-theme").click(function() {
         if (themeLight == false) {
+
+            themeLight = true;
+
             $("body").removeClass("dark-mode");
             $(".logo").removeClass("dark-mode");
             $(".logo h1").removeClass("dark-mode");
