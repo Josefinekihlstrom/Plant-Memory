@@ -48,6 +48,7 @@ $(".start-game").on("click", function () {
     const timeCounter = setInterval(() => {
     timeSecond++;
     displayTime(timeSecond);
+    // Set to == 8 when project is finished! <------------------------------
     if (matches == 2) {
         clearInterval(timeCounter);
     }
