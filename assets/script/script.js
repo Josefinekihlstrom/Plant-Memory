@@ -25,6 +25,9 @@ timeHour.innerHTML = `00:0${timeSecond}`;
 /* ---------- counting moves variables ---------- */
 let counter = document.getElementById('moves');
 var moves = 0;
+/* ---------- theme variable ---------- */
+let themeLight = true;
+$("#light-theme").attr("disabled", "disabled");
 
 /* ---------- Left Section/Menu ---------- */
 function playPause() {
@@ -42,16 +45,41 @@ function playPause() {
 
 $(function() {
   $("#dark-theme").click(function() {
-    $("body").toggleClass("dark-mode");
-    $(".logo").toggleClass("dark-mode");
-    $(".logo h1").toggleClass("dark-mode");
-    $(".high-score").toggleClass("dark-mode");
-    $(".memory-game").toggleClass("dark-mode");
+
+    themeLight = false;
+
+    $("body").addClass("dark-mode");
+    $(".logo").addClass("dark-mode");
+    $(".logo h1").addClass("dark-mode");
+    $(".high-score").addClass("dark-mode");
+    $(".memory-game").addClass("dark-mode");
     $(".card-back").attr("src", "assets/images/cardbackbeige.jpg");
-    $('.start-game').toggleClass("dark-mode");
-    $('.overlay-finish').toggleClass("dark-mode");
+    $(".start-game").addClass("dark-mode");
+    $(".overlay-finish").addClass("dark-mode");
+
+    $("#light-theme").removeAttr("disabled");
+    $("#dark-theme").attr("disabled", "disabled");
   });
 });
+
+$(function() {
+    $("#light-theme").click(function() {
+        if (themeLight == false) {
+            $("body").removeClass("dark-mode");
+            $(".logo").removeClass("dark-mode");
+            $(".logo h1").removeClass("dark-mode");
+            $(".high-score").removeClass("dark-mode");
+            $(".memory-game").removeClass("dark-mode");
+            $(".card-back").attr("src", "assets/images/cardbackgreen.jpg");
+            $(".start-game").removeClass("dark-mode");
+            $(".overlay-finish").removeClass("dark-mode");
+
+            $("#dark-theme").removeAttr("disabled");
+            $("#light-theme").attr("disabled", "disabled");
+        };
+    });
+});
+
 
 /* ---------- Starting the game ---------- */
 
