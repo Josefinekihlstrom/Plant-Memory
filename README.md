@@ -18,6 +18,9 @@ to turn the sounds completely off) and a pop up when the game is finished.
 
 ### Features
 #### Features left to implement
+- Add opportunity to change music during playing. It was in the original idea but due to lack of time of finding
+songs that would match both together and to the games theme I decided to not go forward with that function. It would
+be fun to add the function in the future.
 
 ### Technologies used
 #### Languages
