@@ -88,7 +88,11 @@ body {
 }
 
 .btn-light:hover {
-    background-color: #dbcbbd;
+    background-color: #DBCBBD!important;
+}
+.btn-light:disabled,
+btn-light[disabled] {
+    background-color: #DBCBBD!important;
 }
 
 .btn-dark {
@@ -99,6 +103,11 @@ body {
 
 .btn-dark:hover {
     background-color: #14110f;
+}
+
+.btn-dark:disabled,
+btn-dark[disabled] {
+    background-color: #14110f!important;
 }
 
 /* ---------- memory ---------- */
