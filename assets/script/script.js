@@ -43,6 +43,12 @@ $(".start-game").on("click", function () {
     }
 },1000)
 
+function displayTime(second) {
+    const min = Math.floor(second / 60);
+    const sec = Math.floor(second % 60);
+    timeHour.innerHTML = `${min < 10 ? '0' : ''}${min}:${sec < 10 ? '0' : ''}${sec}`
+}
+
 });
 
 /* ---------- Playing the game ---------- https://www.youtube.com/watch?v=ZniVgo8U7ek/ */
