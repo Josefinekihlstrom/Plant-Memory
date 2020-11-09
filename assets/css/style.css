@@ -134,6 +134,7 @@ body {
     font-size: 150px;
 }
 
+/* ---------- memory game ---------- */
 .memory-game {
     height: 560px;
     width: 565px;
@@ -193,6 +194,10 @@ body {
 
 /* ---------- dark theme ---------- */
 
+.memory-game.dark-mode {
+    background-color: #0f6c2b;
+}
+
 body.dark-mode {
   background: #14110f;
 }
@@ -209,3 +214,12 @@ body.dark-mode {
     background-color: #0f6c2b;
     color: #f7f4f3;
 }
+
+.start-game.dark-mode {
+    background-color: rgb(15, 108, 43, .8);
+}
+
+.overlay-finish.dark-mode {
+    background-color: rgb(15, 108, 43, .8);
+}
+

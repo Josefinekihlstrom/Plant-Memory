@@ -46,6 +46,10 @@ $(function() {
     $(".logo").toggleClass("dark-mode");
     $(".logo h1").toggleClass("dark-mode");
     $(".high-score").toggleClass("dark-mode");
+    $(".memory-game").toggleClass("dark-mode");
+    $(".card-back").attr("src", "assets/images/cardbackbeige.jpg");
+    $('.start-game').toggleClass("dark-mode");
+    $('.overlay-finish').toggleClass("dark-mode");
   });
 });
 
