@@ -217,9 +217,11 @@ body.dark-mode {
 
 .start-game.dark-mode {
     background-color: rgb(15, 108, 43, .8);
+    color: #f7f4f3;
 }
 
 .overlay-finish.dark-mode {
     background-color: rgb(15, 108, 43, .8);
+    color: #f7f4f3;
 }
 
