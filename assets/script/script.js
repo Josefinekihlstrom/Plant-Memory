@@ -11,6 +11,11 @@ backgroundAudio.volume = 0.3;
 var playPauseIcon = document.getElementById('play-pause');
 var count = 0;
 
+// time variables with help from https://www.youtube.com/watch?v=_a4XCarxwr8
+const timeHour = document.getElementById('timer');
+let timeSecond = 0;
+timeHour.innerHTML = `00:0${timeSecond}`;
+
 function playPause() {
     
     if(count === 0) {
@@ -30,7 +35,13 @@ function playPause() {
 $(".start-game").on("click", function () {
   $(this).remove();
 
-
+    const timeCounter = setInterval(() => {
+    timeSecond++;
+    displayTime(timeSecond);
+    if (matches == 2) {
+        clearInterval(timeCounter);
+    }
+},1000)
 
 });
 
