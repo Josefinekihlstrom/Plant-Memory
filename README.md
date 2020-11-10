@@ -24,9 +24,25 @@ be fun to add the function in the future.
 
 ### Technologies used
 #### Languages
+- HTML5
+- CSS
+- Javascript
+
 #### Libraries
+- [Bootstrap](https://getbootstrap.com/) - mainly used for the responsive grid system byt styled accordingly to the theme of the website.
+- [FontAwesome](https://fontawesome.com/) - all icons on the website.
+- [Google Fonts](https://fonts.google.com/) - used for the "Roboto" and "Unica-One" fonts.
+- [jQuery](https://jquery.com/) - was used for the built-in Javascript to work in Bootstrap.
+
 #### Technologies
-[Logo](https://www.freelogodesign.org)
+- [Free Lodge Design](https://www.freelogodesign.org)
+- [Gitpod](https://www.gitpod.io/)
+- [Github](https://github.com/)
+- Google Chrome Developer Tool (built in the Google Chrome browser)
+- Firefox Developer Tool (built in the Firefox browser)
+- [Coolors](https://coolors.co/)
+- [Figma](https://www.figma.com/)
+- Microsoft Paint
 
 ### Testing
 #### Manual testing
