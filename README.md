@@ -48,9 +48,11 @@ and make it work. New timer made with working clearInterval when game is finishe
 ### Acknowledgements
 #### Pages used to find information
 #### Code
-[start the game](https://stackoverflow.com/questions/5299895/jquery-detecting-and-removing-an-element-clicked)
-[timer function](https://www.youtube.com/watch?v=x7WJEmxNlEs)
-Memory game structure with help from [freeCodeCamp.org](https://www.youtube.com/watch?v=ZniVgo8U7ek/)
+- Starting the game with help from [Stack Overflow](https://stackoverflow.com/questions/5299895/jquery-detecting-and-removing-an-element-clicked)
+- Memory game structure with help from [freeCodeCamp.org](https://www.youtube.com/watch?v=ZniVgo8U7ek/)
+- Play/pause the music function with help from [Invention Tricks](https://www.youtube.com/watch?v=wffK2OIt8u0)
+- Timer function with help from [WEB CIFAR](https://www.youtube.com/watch?v=_a4XCarxwr8)
+- Count moves with help from [Sandra Israel-Ovirih](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves)
 #### Thank you
 
 ### Disclaimer

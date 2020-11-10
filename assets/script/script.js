@@ -5,7 +5,6 @@ var matchCardAudio = new Audio('assets/audio/cards-match.wav');
 var winAudio = new Audio('assets/audio/win-game.wav');
 var backgroundAudio = new Audio('assets/audio/background-sound.mp3');
 backgroundAudio.volume = 0.3;
-// play/pause function with help from https://www.youtube.com/watch?v=wffK2OIt8u0
 var playPauseIcon = document.getElementById('play-pause');
 var count = 0;
 
@@ -17,7 +16,7 @@ let firstCard;
 let secondCard;
 let matches = 0;
 
-/* ---------- Playing the game variables with help from https://www.youtube.com/watch?v=_a4XCarxwr8 ---------- */
+/* ---------- Timer variables ---------- */
 const timeHour = document.getElementById('timer');
 let timeSecond = 0;
 timeHour.innerHTML = `00:0${timeSecond}`;
@@ -107,7 +106,7 @@ function displayTime(second) {
 
 });
 
-/* ---------- Playing the game ---------- https://www.youtube.com/watch?v=ZniVgo8U7ek/ */
+/* ---------- Playing the game ---------- */
 
 // flips the cards
 $(cards).on('click', function cardFlip() {
@@ -186,7 +185,7 @@ function boardReset() {
     secondCard = null;
 }
 
-// count moves with help from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves/
+// count moves
  function countMoves() {
      moves++;
      counter.innerHTML = moves;
