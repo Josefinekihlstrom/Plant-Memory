@@ -19,7 +19,11 @@ I want to play a game...
 2. ..that is easy to navigate through.
 3. ..that doesn't require any ambitions to complete the game in a certain amount of time.
 4. ..that has a nice and clean design.
-
+5. ..that doesn't play too loud and stressing audio effects on everything you click.
+6. ..that I can come back to and see my old scores.
+7. ..that I can come back to and play to get my mind off something. With a mindfulness aspect.
+8. ..that I can play to practise my memory skills.
+9. ..that I can play at night with a darker theme so as not to overwork my eyes.
 
 ### Design process
 1. Strategy plane: To offer a fun game experience that lets the player practise their memory skills.
