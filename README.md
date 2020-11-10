@@ -55,7 +55,20 @@ When finishing the game **dark mode**.
 
 
 ### Features
+The game page is sectioned into two columns. In the right column the actual memory game is based and in the
+left column the logo and high score section with some other main key features are placed.
 
+1. **The memory game column features**
+    - When you first arrive to the page, the memory column where the memory cards are placed has an overlay
+    which activates the player to press the play button when they want to start the game.
+    - The overlay also contains information that encourages the player to start the background that will be
+    played when pressing the play button in the left column.
+    - When pressing the overlay the overlay disappers and the timer starts counting. The game is started.
+    - When clicking the different cards an audio is played to indicate that the card is flipped. When two cards
+    match an encouraging sound effect plays.
+    - When the player has matched all cards another overlay covers the memory column to indicate that the game
+    is finished together with an audio playing.
+    
 #### Features left to implement
 - Add opportunity to change music during playing. In the original idea there was a third icon in the container
 to the left. This was suppose to include a feature to make it possible to change through different background
