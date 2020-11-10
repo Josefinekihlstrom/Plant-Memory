@@ -8,6 +8,9 @@ and sit down and enjoy the simple journey of this memory game.
 
 ## UX
 ### UX goals
+The UX goals is to provide the player with a clean and inviting design that will bring a harmonious feeling. 
+With its simple design this memory game will be easy for everyone to navigate through without 
+annoying effects and cluttered content.
 
 ### User stories
 ### Design process
