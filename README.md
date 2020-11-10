@@ -26,13 +26,28 @@ I want to play a game...
 9. ..that I can play at night with a darker theme so as not to overwork my eyes.
 
 ### Design process
-1. Strategy plane: To offer a fun game experience that lets the player practise their memory skills.
-2. Scope plane: The maine feature is going to be the memory game itself alongside with some other features, such as 
+1. **Strategy plane** 
+To offer a fun game experience that lets the player practise their memory skills.
+
+2. **Scope plane** 
+The maine feature is going to be the memory game itself alongside with some other features, such as 
 a high score list with locally scored high scores, sound effects that indicate if you win or loose (with an option 
 to turn the sounds completely off) and a pop up when the game is finished.
-3. Structure plane: A single page
-4. Skeleton plane:
-5. Surface plane:
+
+3. **Structure plane** 
+A single page
+
+4. **Skeleton plane**
+
+
+5. **Surface plane**
+- When I knew how I wanted the structure to be I turned to the internet to find free images to use for my game.
+I ended up on [Freepic.com](https://www.freepik.com/free-vector/potted-plants-set_8271077.htm#page=1&query=plants&position=1)
+where I found the pictures of the plants that I ended up using.
+- After that I turned to [Coolors](https://coolors.co/) to find colors that would match the theme of the page.
+I wanted to use a soft color scheme for the default theme and ended up with the following colors:
+![Color Palette](/assets/images/coolors.png)
+- 
 
 #### Wireframes
 ![wireframe1](/assets/wireframes/wireframe1.jpg)
