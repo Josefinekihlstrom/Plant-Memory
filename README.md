@@ -78,6 +78,20 @@ left column the logo and high score section with some other main key features ar
     - When the replay icon is clicked the page reload. This allows the player to restart the game whenever it's
     needed.
 
+4. **Audio Icon**
+    - When the audio icon is clicked a jazzy background music is starting to play. The player can at anytime press
+    the audio icon again to pause the music if it's not wanted. The audio icon does however not stop the sound
+    effects that plays when flipping cards, matching cards or winning the game.
+
+5. **Moves, Timer and High Score**
+    - The number next to the text 'Moves' indicates how many times the player has made a round of clicking two
+    cards.
+    - The timer let's the player know how much time has passed since starting the game. When the game is finished
+    the timer is paused and shows the time the game was finished in.
+    - The number next to the 'High Score' text indicates the highest score (Lowest amount of moves to finish the game) 
+    that the player has got when playing the game. This feature is locally stored and will remain on the page
+    everytime the player visits the page.
+
 #### Features left to implement
 - Add opportunity to change music during playing. In the original idea there was a third icon in the container
 to the left. This was suppose to include a feature to make it possible to change through different background
