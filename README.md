@@ -92,6 +92,12 @@ left column the logo and high score section with some other main key features ar
     that the player has got when playing the game. This feature is locally stored and will remain on the page
     everytime the player visits the page.
 
+6. **Theme Buttons**
+    - The two buttons represents a theme each. When the player visits the page the light theme is automatically
+    showed which makes the 'Ligh Theme' button disabled.
+    When the player click on the 'Dark Theme' button the css style for that theme is switched to. This makes the
+    'Dark Theme' button disabled but not the 'Light Theme' button to indicate which theme is currently on.
+
 #### Features left to implement
 - Add opportunity to change music during playing. In the original idea there was a third icon in the container
 to the left. This was suppose to include a feature to make it possible to change through different background
