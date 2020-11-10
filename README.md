@@ -15,6 +15,24 @@ to turn the sounds completely off) and a pop up when the game is finished.
 5. Surface plane:
 
 #### Wireframes
+![wireframe1](/assets/wireframes/wireframe1.jpg)
+Before starting the memory game.
+
+![wireframe2](/assets/wireframes/wireframe2.jpg)
+Overlook of all card images that will be used.
+
+![wireframe3](/assets/wireframes/wireframe3.jpg)
+When finishing the game.
+
+![wireframe4](/assets/wireframes/wireframe4.jpg)
+Before starting the memory game **dark mode**.
+
+![wireframe5](/assets/wireframes/wireframe5.jpg)
+Overlook of all card images that will be used **dark mode**.
+
+![wireframe6](/assets/wireframes/wireframe6.jpg)
+When finishing the game **dark mode**.
+
 
 ### Features
 #### Features left to implement
