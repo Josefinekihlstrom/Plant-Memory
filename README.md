@@ -68,7 +68,16 @@ left column the logo and high score section with some other main key features ar
     match an encouraging sound effect plays.
     - When the player has matched all cards another overlay covers the memory column to indicate that the game
     is finished together with an audio playing.
-    
+
+2. **Left Column Features**
+    - The left column includes a logo together with the name of the game and a container that includes a replay
+    icon, an audio icon, a moves counter, a timer, the highest score and two buttons which lets the player
+    choose a theme for the page.
+
+3. **Replay and Audio Icons**
+    - When the replay icon is clicked the page reload. This allows the player to restart the game whenever it's
+    needed.
+
 #### Features left to implement
 - Add opportunity to change music during playing. In the original idea there was a third icon in the container
 to the left. This was suppose to include a feature to make it possible to change through different background
