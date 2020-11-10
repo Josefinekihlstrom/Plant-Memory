@@ -47,7 +47,8 @@ where I found the pictures of the plants that I ended up using.
 - After that I turned to [Coolors](https://coolors.co/) to find colors that would match the theme of the page.
 I wanted to use a soft color scheme for the default theme and ended up with the following colors:
 ![Color Palette](/assets/images/coolors.png)
-- 
+- The logo was then made with the technology of [Free Lodge Design](https://www.freelogodesign.org).
+- The font that I decided to use throuought the project was [Amatic](https://fonts.google.com/specimen/Amatic+SC?query=amatic)
 
 #### Wireframes
 ![wireframe1](/assets/wireframes/wireframe1.jpg)
