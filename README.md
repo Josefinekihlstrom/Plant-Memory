@@ -43,10 +43,18 @@ and make it work. New timer made with working clearInterval when game is finishe
 ### Credits
 #### Content
 #### Media
-[Memory Images](https://www.freepik.com/free-vector/potted-plants-set_8271077.htm#page=1&query=plants&position=1)
+- [Memory Images](https://www.freepik.com/free-vector/potted-plants-set_8271077.htm#page=1&query=plants&position=1)
+- [Background Music](https://www.bensound.com/royalty-free-music)
+- [Soundeffect when flipping the cards](https://www.soundjay.com/button/sounds/button-20.mp3)
+- [Soundeffect when getting a match](https://freesound.org/people/dersuperanton/sounds/433646/)
+- [Soundeffect when winning the game](https://freesound.org/people/Fupicat/sounds/521643/)
 
 ### Acknowledgements
 #### Pages used to find information
+- [W3C Schools](https://www.w3schools.com/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Youtube](https://youtube.com/)
+
 #### Code
 - Starting the game with help from [Stack Overflow](https://stackoverflow.com/questions/5299895/jquery-detecting-and-removing-an-element-clicked)
 - Memory game structure with help from [freeCodeCamp.org](https://www.youtube.com/watch?v=ZniVgo8U7ek/)
@@ -56,3 +64,4 @@ and make it work. New timer made with working clearInterval when game is finishe
 #### Thank you
 
 ### Disclaimer
+This website was created for educational use only.
