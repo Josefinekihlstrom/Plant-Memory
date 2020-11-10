@@ -1,9 +1,14 @@
-# Memory game
-
+# Plant Memory
 ## About
+Plant Memory is a memory game for everyone to enjoy. 
+With its clean and stylish design together with a soft colorscheme, the game invites to a harmonious gaming 
+experience with a jazzy twist. This memory game does not require any competition ambitions in the player, 
+this is simply a memory that creates peace and harmony in the person who visits the site to play. Grab a coup of tea
+and sit down and enjoy the simple journey of this memory game.
 
 ## UX
 ### UX goals
+
 ### User stories
 ### Design process
 1. Strategy plane: To offer a fun game experience that lets the player practise their memory skills.
