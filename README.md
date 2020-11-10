@@ -13,6 +13,14 @@ With its simple design this memory game will be easy for everyone to navigate th
 annoying effects and cluttered content.
 
 ### User stories
+I want to play a game...
+
+1. ..that is fun.
+2. ..that is easy to navigate through.
+3. ..that doesn't require any ambitions to complete the game in a certain amount of time.
+4. ..that has a nice and clean design.
+
+
 ### Design process
 1. Strategy plane: To offer a fun game experience that lets the player practise their memory skills.
 2. Scope plane: The maine feature is going to be the memory game itself alongside with some other features, such as 
