@@ -123,6 +123,9 @@ btn-dark[disabled] {
 /* ---------- start game overlay ---------- */
 .start-game {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 560px;
     width: 565px;
     background-color: rgb(197, 254, 154, .8);
@@ -147,8 +150,8 @@ btn-dark[disabled] {
 .memory-game {
     height: 560px;
     width: 565px;
-    margin-right: 0px;
-    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     background-color: #c5fe9a;
@@ -190,6 +193,9 @@ btn-dark[disabled] {
 /* ---------- game finished overlay ---------- */
 .overlay-finish {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 560px;
     width: 565px;
     background-color: rgb(197, 254, 154, .8);
