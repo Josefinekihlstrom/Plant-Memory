@@ -7,6 +7,7 @@
 
 * {
     margin: 0 auto;
+    idth: 100%;
 }
 
 /* ---------- body ---------- */
@@ -242,14 +243,32 @@ body.dark-mode {
 
 /* ---------- media query ---------- */
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+
+    .row {
+       display: flex; 
+    }
+
     .logo {
         width: 250px;
         float: left;
     }
 
     .high-score {
-        width: 420px;
+        width: 320px;
         float: left;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .logo {
+        float: none;
+        width: 560px;
+    }
+
+    .high-score {
+        float: none;
+        width: 560px;
     }
 }
