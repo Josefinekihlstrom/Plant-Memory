@@ -1,5 +1,6 @@
+$( window ).on( "load", function() {
+    
 /* ---------- Audio variables ---------- */
-
 var clickAudio = new Audio('assets/audio/click-card.mp3');
 var matchCardAudio = new Audio('assets/audio/cards-match.wav');
 var winAudio = new Audio('assets/audio/win-game.wav');
@@ -215,3 +216,5 @@ function gameFinished() {
         playPauseIcon.className = "fas fa-volume-mute";
     }
 }
+
+});
