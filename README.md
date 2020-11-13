@@ -115,10 +115,14 @@ left column the logo and high score section with some other main key features ar
     'Dark Theme' button disabled but not the 'Light Theme' button to indicate which theme is currently on.
 
 #### Features left to implement
-- Add opportunity to change music during playing. In the original idea there was a third icon in the container
+- **Add opportunity to change music during playing.** In the original idea there was a third icon in the container
 to the left. This was suppose to include a feature to make it possible to change through different background
 songs. However due to lack of time of finding the perfect songs to match the game and the page I decided to
 leave this to hopefully add it in the future.
+- **Pause button to pause the game while playing.** My mentor suggested that I would add a pause button for the player to be
+able to pause the game while playing. This was something I tried to add to the timer function without a working result,
+I just simply couldn't get the function to pause the time to work as I wanted. So unfortunately I had to skip
+that that idé.
 
 ### Technologies used
 #### Languages
