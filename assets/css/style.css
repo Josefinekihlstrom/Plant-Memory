@@ -291,14 +291,57 @@ body.dark-mode {
 @media (max-width: 480px) {
 
     .logo {
-        width: 310px;
+        width: 295px;
     }
 
     .high-score {
-        width: 310px;
+        width: 295px;
     }
 
     .logo h1 {
-    font-size: 60px;
+        font-size: 60px;
+    }
+
+    .memory-game {
+        height: 300px;
+        width: 295px;
+    }
+
+    .memory-card img {
+        height: 62px;
+        width: 62px;
+    }
+
+    .memory-card {
+        width: 62px;
+        height: 62px;
+        margin: 5px;
+    }
+
+    .start-game {
+        height: 300px;
+        width: 295px; 
+    }
+
+    .play-button {
+        margin-top: 70px;
+    }
+
+    .fa-play-circle {
+        font-size: 100px;
+    }
+
+    .play-button h2 {
+        font-size: 42px;
+    }
+
+    .overlay-finish {
+        height: 300px;
+        width: 295px;
+        background-color: rgb(197, 254, 154, .8);
+    }
+
+    .fa-trophy {
+        font-size: 100px;
     }
 }
