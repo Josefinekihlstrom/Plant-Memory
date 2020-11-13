@@ -27,7 +27,7 @@ var moves = 0;
 let themeLight = true;
 $("#light-theme").attr("disabled", "disabled");
 
-/* ---------- Left Section/Menu ---------- */
+/* ---------- Play/pause music ---------- */
 function playPause() {
     
     if(count === 0) {
@@ -40,7 +40,12 @@ function playPause() {
         playPauseIcon.className = "fas fa-volume-mute";
     }
 }
+/* ---------- How to play modal ---------- */
+$("#how-to").click(function() {
+    $("#myModal").modal('show');
+});
 
+/* ---------- Theme buttons ---------- */
 $(function() {
   $("#dark-theme").click(function() {
 
