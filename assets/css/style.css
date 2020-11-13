@@ -290,11 +290,8 @@ body.dark-mode {
 
 @media (max-width: 480px) {
 
+    /* logo and high score section */
     .logo {
-        width: 295px;
-    }
-
-    .high-score {
         width: 295px;
     }
 
@@ -302,6 +299,21 @@ body.dark-mode {
         font-size: 60px;
     }
 
+    .high-score {
+        width: 295px;
+        height: 280px;
+    }
+
+    .icons {
+        font-size: 24px;
+    }
+
+    .moves-high-score p {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    /* memory game */
     .memory-game {
         height: 300px;
         width: 295px;
@@ -318,6 +330,7 @@ body.dark-mode {
         margin: 5px;
     }
 
+    /* start game overlay */
     .start-game {
         height: 300px;
         width: 295px; 
@@ -335,6 +348,7 @@ body.dark-mode {
         font-size: 42px;
     }
 
+    /* game finished overlay */
     .overlay-finish {
         height: 300px;
         width: 295px;
