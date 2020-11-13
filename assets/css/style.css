@@ -200,6 +200,7 @@ btn-dark[disabled] {
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* webkit to support the hidden backface in safari */
 }
 
 .card-front {
