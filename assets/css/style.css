@@ -287,3 +287,18 @@ body.dark-mode {
         width: 565px;
     }
 }
+
+@media (max-width: 480px) {
+
+    .logo {
+        width: 310px;
+    }
+
+    .high-score {
+        width: 310px;
+    }
+
+    .logo h1 {
+    font-size: 60px;
+    }
+}
