@@ -154,6 +154,10 @@ btn-dark[disabled] {
     font-size: 70px;
 }
 
+.play-button h3 {
+    font-size: 32px;
+}
+
 .fa-play-circle {
     font-size: 150px;
 }
