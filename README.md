@@ -154,6 +154,8 @@ that that idé.
 * clearInterval not working to stop timer when game is finished. 
 Decided to start from scratch and make a new timer with cleaner code to hopefully get a better understanding of it
 and make it work. New timer made with working clearInterval when game is finished.
+* When testing the game on my iPhone the memory cards wont turn properly when clicking on them. This seem to
+look fine when I try the game out in device toolbar in my Chrome browser. NOT SOLVED YET.
 
 ### Deployment
 #### Cloning this project
