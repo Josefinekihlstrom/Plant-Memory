@@ -191,6 +191,11 @@ If you want to work further on my project, go ahead and clone it following these
 To get to the source of this information: [Click here!](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 ### Credits
+
+Thank you to the following people:
+* My mentor Sen Owonikoko.
+* Slack community for helping me when I thought my project was lost forever due to a dockerfile change.
+
 #### Content
 #### Media
 - [Memory Images](https://www.freepik.com/free-vector/potted-plants-set_8271077.htm#page=1&query=plants&position=1)
