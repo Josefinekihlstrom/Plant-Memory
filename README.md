@@ -22,33 +22,43 @@ I want to play a game...
 
 1. ..that is fun.
 2. ..that is easy to navigate through.
-3. ..that doesn't require any ambitions to complete the game in a certain amount of time.
+3. ..that doesn't require compeeting agianst the clock.
 4. ..that has a nice and clean design.
 5. ..that doesn't play too loud and stressing audio effects on everything you click.
 6. ..that I can come back to and see my old scores.
 7. ..that I can come back to and play to get my mind off something. With a mindfulness aspect.
 8. ..that I can play to practise my memory skills.
-9. ..that I can play at night with a darker theme so as not to overwork my eyes.
+9. ..that I can play at night with a darker theme.
 
 ### Design process
 1. **Strategy plane** 
-To offer a fun game experience that lets the player practise their memory skills.
+My strategy for this game was to offer a fun game experience that lets the player practise their memory skills. 
+I also wanted to make the game with a mindfulness twist to it. The strategy plane was based on the user stories above.
 
 2. **Scope plane** 
-The maine feature is going to be the memory game itself alongside with some other features, such as 
-a high score list with locally scored high scores, sound effects that indicate if you win or loose (with an option 
-to turn the sounds completely off) and a pop up when the game is finished.
+The main feature was going to be the memory game itself alongside with some other features, such as 
+a 'high score list' with locally scored high scores, a timer, smooth sound effects that indicate if you win or loose
+and the option to play some jazzy background music (that you also can turn off).
+I also wanted the overall theme for the game reflect the mindfulness aspect through the images that I was going
+to use. In this stage the images was not decided yet.
 
 3. **Structure plane** 
-A single page
+When the key features was set the structure plane was pretty simple. I was going to have a single page with
+all features in it and the keyword simplicity would thereafter guide me through the skeleton plane.
 
 4. **Skeleton plane**
+I started sketching out what the layout would be like and got the balance of the page together by dividing 
+it into two main sections of the page. The right sektion of the page was going to cover the majority of the
+page with the memory game feature. I didn't want the left section to be left out entirely and decided to give
+it the space that it needed to provide the information within it as clear as possible.
 
 
 5. **Surface plane**
 - When I knew how I wanted the structure to be I turned to the internet to find free images to use for my game.
 I ended up on [Freepic.com](https://www.freepik.com/free-vector/potted-plants-set_8271077.htm#page=1&query=plants&position=1)
-where I found the pictures of the plants that I ended up using.
+where I found the pictures of the plants that I ended up using. For me plants represents a sense of calm and
+anyone who has plants as a hobby can probably attest that the power of taking care of plants really brings
+a mindfulness to both body and soul.
 - After that I turned to [Coolors](https://coolors.co/) to find colors that would match the theme of the page.
 I wanted to use a soft color scheme for the default theme and ended up with the following colors:
 ![Color Palette](/assets/images/coolors.png)
@@ -74,6 +84,18 @@ Overlook of all card images that will be used **dark mode**.
 ![wireframe6](/assets/wireframes/wireframe6.jpg)
 When finishing the game **dark mode**.
 
+#### Changes I made throuought the project
+- Instead of adding the feature of giving the player the option to change background music I decided to replace it
+with a questionmark icon in the Menu/Information section to simply provide the player who doesn't know how to
+play a memory game with information about how to play.
+I'm sure however that most people today know how to play a memory game, but for me it would feel omitted not to 
+share that information with the player who wants to play but doesn't know how.
+
+- Some overall text and layout were changed in the overlays to give a better overwiev of the information 
+provided in them. I added text under the play button to indicate how to start the game and encourage the 
+player to get the background music started.
+When the game is finished I decided to add the icon of a winning cup together with the information about how to
+play the game again.
 
 ### Features
 The game page is sectioned into two columns. In the right column the actual memory game is based and in the
@@ -90,8 +112,8 @@ left column the logo and Menu/Information section with some other main key featu
     - When the player has matched all cards another overlay covers the memory column to indicate that the game
     is finished together with an audio playing.
 
-2. **Menu/Information column**
-    - The Menu/Information column includes a logo together with the name of the game and a container that includes a replay
+2. **Menu/Information section**
+    - The Menu/Information section includes a logo together with the name of the game and a container that includes a replay
     icon, a speaker icon, a questionmark icon, a moves counter, a timer, the last round time and two theme buttons.
 
 3. **Replay, Speaker and Questionmark Icons**
