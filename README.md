@@ -1,10 +1,15 @@
 # Plant Memory
 ## About
+
+![Screenshot](assets/images/screenshot.png)
+
 Plant Memory is a memory game for everyone to enjoy. 
 With its clean and stylish design together with a soft colorscheme, the game invites to a harmonious gaming 
 experience with a jazzy twist. This memory game does not require any competition ambitions in the player, 
 this is simply a memory that creates peace and harmony in the person who visits the site to play. Grab a coup of tea
 and sit down and enjoy the simple journey of this memory game.
+
+[Go to the Plant Memory live project here!](https://josefinekihlstrom.github.io/Plant-Memory/)
 
 ## UX
 ### UX goals
