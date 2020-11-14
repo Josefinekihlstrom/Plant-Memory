@@ -72,47 +72,44 @@ When finishing the game **dark mode**.
 
 ### Features
 The game page is sectioned into two columns. In the right column the actual memory game is based and in the
-left column the logo and high score section with some other main key features are placed.
+left column the logo and Menu/Information section with some other main key features are placed.
 
 1. **The memory game column features**
     - When you first arrive to the page, the memory column where the memory cards are placed has an overlay
     which activates the player to press the play button when they want to start the game.
-    - The overlay also contains information that encourages the player to start the background that will be
-    played when pressing the play button in the left column.
+    - The overlay also contains information that encourages the player to start the background music that will be
+    played when pressing the speaker icon in the menu section.
     - When pressing the overlay the overlay disappers and the timer starts counting. The game is started.
     - When clicking the different cards an audio is played to indicate that the card is flipped. When two cards
     match an encouraging sound effect plays.
     - When the player has matched all cards another overlay covers the memory column to indicate that the game
     is finished together with an audio playing.
 
-2. **Left Column Features**
-    - The left column includes a logo together with the name of the game and a container that includes a replay
-    icon, an audio icon, a moves counter, a timer, the highest score and two buttons which lets the player
-    choose a theme for the page.
+2. **Menu/Information column**
+    - The Menu/Information column includes a logo together with the name of the game and a container that includes a replay
+    icon, a speaker icon, a questionmark icon, a moves counter, a timer, the last round time and two theme buttons.
 
-3. **Replay and Audio Icons**
+3. **Replay, Speaker and Questionmark Icons**
     - When the replay icon is clicked the page reload. This allows the player to restart the game whenever it's
     needed.
+    - When the speaker icon is clicked, the background music starts playing. If the background music is already playing you can
+    click on the speaker icon again to stop the music.
+    - When the questionmark icon is clicked a modal pops up with information about how to play the game. This modal can be closed
+    in two ways, by clicking on the 'X' in the upper right corner, or clicking the 'Close' button on the bottom of the modal.
 
-4. **Audio Icon**
-    - When the audio icon is clicked a jazzy background music is starting to play. The player can at anytime press
-    the audio icon again to pause the music if it's not wanted. The audio icon does however not stop the sound
-    effects that plays when flipping cards, matching cards or winning the game.
-
-5. **Moves, Timer and High Score**
+4. **Moves, Timer and Last Round**
     - The number next to the text 'Moves' indicates how many times the player has made a round of clicking two
-    cards.
+    cards in the of the ongoing game round.
     - The timer let's the player know how much time has passed since starting the game. When the game is finished
-    the timer is paused and shows the time the game was finished in.
-    - The number next to the 'High Score' text indicates the highest score (Lowest amount of moves to finish the game) 
-    that the player has got when playing the game. This feature is locally stored and will remain on the page
-    everytime the player visits the page.
+    the timer is paused.
+    - The timestamp next to the 'Last Round' text indicates the time that the player finished the game in the last round of 
+    playing. This to encourage the player to try to beat that time in the ongoing round.
 
-6. **Theme Buttons**
+5. **Theme Buttons**
     - The two buttons represents a theme each. When the player visits the page the light theme is automatically
     showed which makes the 'Ligh Theme' button disabled.
     When the player click on the 'Dark Theme' button the css style for that theme is switched to. This makes the
-    'Dark Theme' button disabled but not the 'Light Theme' button to indicate which theme is currently on.
+    'Dark Theme' button disabled but not the 'Light Theme' button, this to indicate which theme is currently used.
 
 #### Features left to implement
 - **Add opportunity to change music during playing.** In the original idea there was a third icon in the container
