@@ -89,7 +89,7 @@ $(function() {
 
             $("#dark-theme").removeAttr("disabled");
             $("#light-theme").attr("disabled", "disabled");
-        };
+        }
     });
 });
 
@@ -108,12 +108,12 @@ $(".start-game").on("click", function () {
         clearInterval(timeCounter);
         localStorage.setItem("lastRoundTime", timeHour.innerHTML);
     }
-},1000)
+},1000);
 
 function displayTime(second) {
     const min = Math.floor(second / 60);
     const sec = Math.floor(second % 60);
-    timeHour.innerHTML = `${min < 10 ? '0' : ''}${min}:${sec < 10 ? '0' : ''}${sec}`
+    timeHour.innerHTML = `${min < 10 ? '0' : ''}${min}:${sec < 10 ? '0' : ''}${sec}`;
 }
 
 });
@@ -124,7 +124,7 @@ function displayTime(second) {
 $(cards).on('click', function cardFlip() {
 
     clickAudio.play();
-    clickAudio.currentTime = 0
+    clickAudio.currentTime = 0;
     
     // lock the board if true
     if (boardLocked) return;
@@ -149,8 +149,6 @@ $(cards).on('click', function cardFlip() {
 
 // checks for cards to match
 function checkMatch() {
-
-    let cardsMatch = firstCard.dataset.id === secondCard.dataset.id;
 
     // if cards match go to disableCards function
     if (firstCard.dataset.id === secondCard.dataset.id) {
@@ -202,7 +200,7 @@ function boardReset() {
  function countMoves() {
      moves++;
      counter.innerHTML = moves;
- };
+ }
 
 // shuffels cards
 (function shuffleCards() {
