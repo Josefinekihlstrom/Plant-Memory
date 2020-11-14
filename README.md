@@ -224,11 +224,6 @@ To get to the source of this information: [Click here!](https://docs.github.com/
 
 ### Credits
 
-Thank you to the following people:
-* My mentor Sen Owonikoko.
-* Slack community for helping me when I thought my project was lost forever due to a dockerfile change.
-
-#### Content
 #### Media
 - [Memory Images](https://www.freepik.com/free-vector/potted-plants-set_8271077.htm#page=1&query=plants&position=1)
 - [Background Music](https://www.bensound.com/royalty-free-music)
@@ -251,6 +246,9 @@ Thank you to the following people:
 - Localstorage for last played round with help from [Ethan](https://codetheweb.blog/javascript-localstorage/)
 
 #### Thank you
+Thank you to the following people:
+* My mentor Sen Owonikoko.
+* Slack community for helping me when I thought my project was lost forever due to a dockerfile change.
 
 ### Disclaimer
 This website was created for educational use only.
