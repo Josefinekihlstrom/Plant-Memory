@@ -199,13 +199,16 @@ a misunderstanding from my side in the code I wrote.
 Probably because the sound wasn't done playing the first time clicking the card.
 I solved it by putting the flip card sound to a current time of 0 when a card is clicked. This made it possible to
 play the audio quickly after it's first been executed.
+The code that guided me solve this bug was found [here](https://stackoverflow.com/questions/1933969/sound-effects-in-javascript-html5).
 * **Fixed!** The ClearInterval function was not working to stop timer when game is finished. 
-I Decided to start from scratch and make a new timer with cleaner code to hopefully get a better understanding of it
-and make it work. The new timer that was made worked and I was able to pause it when the game was finished.
+I Decided to start from scratch and make a new timer with cleaner code to hopefully get a better understanding of 
+my mistake and make it work properly.
+The code that guided me to rebuild my timer was found [here]([WEB CIFAR](https://www.youtube.com/watch?v=_a4XCarxwr8).
 * **Fixed!** When testing the game on my iPhone the memory cards wouldn't turn properly when clicking on them. 
 This seemed to look fine when I tried the game out in device toolbar in my Chrome browser. 
 The feature of flipping the cards did not seem to be supported by Safari browsers so I solved this problem by 
 adding a webkit attribute in my css code for the backface visibility.
+The code that guided me to solve this bug was found [here](https://stackoverflow.com/questions/42744573/backface-visibility-not-working-in-safari/45145977).
 
 ### Deployment
 This project was developed in Gitpod and then pushed to GitHub. To deploy the project the following steps were made:
