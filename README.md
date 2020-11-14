@@ -156,6 +156,18 @@ This seemed to look fine when I tried the game out in device toolbar in my Chrom
 I solved this problem by adding a webkit attribute in my css code for the backface visibility.
 
 ### Deployment
+This project was developed in Gitpod and then pushed to GitHub. To deploy the project the following steps were made:
+
+1. Log in to [GitHub](https://github.com/) and go to my [GitHub profile](https://github.com/Josefinekihlstrom).
+2. Select [Josefinekihlstrom/Plant-Memory](https://github.com/Josefinekihlstrom/Plant-Memory) from the repository list.
+3. Select 'Settings' in the menu under the repository name.
+4. Scroll down to 'GitHub Pages' section.
+5. Under 'Source', select 'Master' in the dropdown menu.
+6. Click 'Save' and the page will refresh.
+7. Scroll back down to 'GitHub Pages' to get access to the link.
+
+Go to the Plant Memory live website here: [Plant Memory](https://josefinekihlstrom.github.io/Plant-Memory/)
+
 #### Cloning this project
 
 ### Credits
