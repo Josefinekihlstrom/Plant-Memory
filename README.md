@@ -203,7 +203,7 @@ The code that guided me solve this bug was found [here](https://stackoverflow.co
 * **Fixed!** The ClearInterval function was not working to stop timer when game is finished. 
 I Decided to start from scratch and make a new timer with cleaner code to hopefully get a better understanding of 
 my mistake and make it work properly.
-The code that guided me to rebuild my timer was found [here]([WEB CIFAR](https://www.youtube.com/watch?v=_a4XCarxwr8).
+The code that guided me to rebuild my timer was found [here](https://www.youtube.com/watch?v=_a4XCarxwr8).
 * **Fixed!** When testing the game on my iPhone the memory cards wouldn't turn properly when clicking on them. 
 This seemed to look fine when I tried the game out in device toolbar in my Chrome browser. 
 The feature of flipping the cards did not seem to be supported by Safari browsers so I solved this problem by 
