@@ -178,7 +178,17 @@ This project was developed in Gitpod and then pushed to GitHub. To deploy the pr
 
 Go to the Plant Memory live website here: [Plant Memory](https://josefinekihlstrom.github.io/Plant-Memory/)
 
-#### Cloning this project
+### Cloning this project
+If you want to work further on my project, go ahead and clone it following these steps:
+
+1. Go to the top of the [Josefinekihlstrom/Plant-Memory](https://github.com/Josefinekihlstrom/Plant-Memory) repository.
+2. Click the button named 'Code' next to the green 'Gitpod' button.
+3. Choose HTTPS and copy the URL by clicking the icon next to the URL.
+4. Open Git Bash/Terminal and change the current working directory to the location where you want the cloned directory.
+5. Type 'git clone' and then paste the copied URL.
+6. Press 'Enter'.
+
+To get to the source of this information: [Click here!](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 ### Credits
 #### Content
@@ -201,7 +211,7 @@ Go to the Plant Memory live website here: [Plant Memory](https://josefinekihlstr
 - Play/pause the music function with help from [Invention Tricks](https://www.youtube.com/watch?v=wffK2OIt8u0)
 - Timer function with help from [WEB CIFAR](https://www.youtube.com/watch?v=_a4XCarxwr8)
 - Count moves with help from [Sandra Israel-Ovirih](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves)
-- Store last played round with help from [Ethan](https://codetheweb.blog/javascript-localstorage/)
+- Localstorage for last played round with help from [Ethan](https://codetheweb.blog/javascript-localstorage/)
 
 #### Thank you
 
