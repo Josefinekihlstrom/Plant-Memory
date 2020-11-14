@@ -103,8 +103,8 @@ $(".start-game").on("click", function () {
     const timeCounter = setInterval(() => {
     timeSecond++;
     displayTime(timeSecond);
-    // Set to == 8 when project is finished! <------------------------------
-    if (matches == 2) {
+    
+    if (matches == 8) {
         clearInterval(timeCounter);
         localStorage.setItem("lastRoundTime", timeHour.innerHTML);
     }
@@ -155,8 +155,7 @@ function checkMatch() {
         matchCardAudio.play();
         matches = matches + 1;
 
-        // if all cards are paired. Set to == 8 when project is finished! <------------------------------
-        if (matches == 2) { 
+        if (matches == 8) { 
             gameFinished();
         }
 
