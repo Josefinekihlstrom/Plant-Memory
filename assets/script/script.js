@@ -124,6 +124,8 @@ function displayTime(second) {
 $(cards).on('click', function cardFlip() {
 
     clickAudio.play();
+    clickAudio.currentTime = 0
+    
     // lock the board if true
     if (boardLocked) return;
     // to avoid dubble click on first card
