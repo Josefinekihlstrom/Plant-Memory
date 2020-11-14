@@ -186,9 +186,10 @@ that idé and will hopefully try to make it in the future.
 * **Fixed!** The cards wouldn't shuffle when playing the game. Solved the problem by going back and change the cards variable 
 value to javascript code instead of jquery that I wrote from the beginning. The problem must have been caused by 
 a misunderstanding from my side in the code I wrote.
-* **Not fixed yet!** When you click too quick on the next card the card flip audio will sometimes not play. I've tried to solve this 
-issue but could not find a solution that would fix this problem. Due to lack of time this is something I will have to
-fix in the future and the bug is therefor not fixed right now.
+* **Fixed!** When you clicked too quick on the next card the card flip audio would sometimes not play. 
+Probably because the sound wasn't done playing the first time clicking the card.
+I solved it by putting the flip card sound to a current time of 0 when a card is clicked. This made it possible to
+play the audio quickly after it's first been executed.
 * **Fixed!** The ClearInterval function was not working to stop timer when game is finished. 
 I Decided to start from scratch and make a new timer with cleaner code to hopefully get a better understanding of it
 and make it work. The new timer that was made worked and I was able to pause it when the game was finished.
