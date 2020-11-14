@@ -165,10 +165,10 @@ that idé and will hopefully try to make it in the future.
 - Javascript
 
 #### Libraries
-- [Bootstrap](https://getbootstrap.com/) - mainly used for the responsive grid system byt styled accordingly to the theme of the website.
-- [FontAwesome](https://fontawesome.com/) - all icons on the website.
-- [Google Fonts](https://fonts.google.com/) - used for the "Roboto" and "Unica-One" fonts.
-- [jQuery](https://jquery.com/) - was used for the built-in Javascript to work in Bootstrap.
+- [Bootstrap](https://getbootstrap.com/)
+- [FontAwesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [jQuery](https://jquery.com/)
 
 #### Technologies
 - [Free Lodge Design](https://www.freelogodesign.org)
@@ -179,9 +179,12 @@ that idé and will hopefully try to make it in the future.
 - [Coolors](https://coolors.co/)
 - [Figma](https://www.figma.com/)
 - Microsoft Paint - to edit the images used.
+- [Favicon](https://favicon.io/)
 
 ### Testing
 #### Manual testing
+
+
 #### Bugs found
 * **Fixed!** The cards wouldn't shuffle when playing the game. Solved the problem by going back and change the cards variable 
 value to javascript code instead of jquery that I wrote from the beginning. The problem must have been caused by 
