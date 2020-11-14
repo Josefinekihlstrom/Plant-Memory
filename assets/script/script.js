@@ -27,6 +27,10 @@ var moves = 0;
 let themeLight = true;
 $("#light-theme").attr("disabled", "disabled");
 
+/* ---------- local storage ---------- https://codetheweb.blog/javascript-localstorage/ */
+let localStorageBestTime = localStorage.getItem("lastRoundTime", timeHour.innerHTML);
+
+
 /* ---------- Play/pause music ---------- */
 function playPause() {
     
@@ -44,6 +48,9 @@ function playPause() {
 $("#how-to").click(function() {
     $("#myModal").modal('show');
 });
+
+/* ---------- Latest round ---------- */
+$("#highscore").text(localStorageBestTime);
 
 /* ---------- Theme buttons ---------- */
 $(function() {
@@ -99,6 +106,7 @@ $(".start-game").on("click", function () {
     // Set to == 8 when project is finished! <------------------------------
     if (matches == 2) {
         clearInterval(timeCounter);
+        localStorage.setItem("lastRoundTime", timeHour.innerHTML);
     }
 },1000)
 
