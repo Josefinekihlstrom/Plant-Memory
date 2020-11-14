@@ -6,16 +6,19 @@
 Plant Memory is a memory game for everyone to enjoy. 
 With its clean and stylish design together with a soft colorscheme, the game invites to a harmonious gaming 
 experience with a jazzy twist. This memory game does not require any competition ambitions in the player, 
-this is simply a memory that creates peace and harmony in the person who visits the site to play. Grab a coup of tea
-and sit down and enjoy the simple journey of this memory game.
+this is simply a memory game that creates peace and harmony in the person who visits the site to play. 
+For many, plants represents a sense of calm, and anyone who has plants as a hobby can 
+probably certify that the power of taking care of plants really brings a feeling of mindfulness to both 
+body and soul. So grab a coup of tea and sit down and enjoy the simple journey of this memory game.
 
 [Go to the Plant Memory live project here!](https://josefinekihlstrom.github.io/Plant-Memory/)
 
 ## UX
 ### UX goals
-The UX goals is to provide the player with a clean and inviting design that will bring a harmonious feeling. 
-With its simple design this memory game will be easy for everyone to navigate through without 
-annoying effects and cluttered content.
+The UX goals is to provide the player with an inviting and responsive design that will bring the feeling of mindfulness. 
+With its simple structure this memory game will be easy for everyone to navigate through without 
+unclear instructions, annoying audio effects and cluttered content. The main goal is to offer the player a relaxing 
+surrounding while practising their memory skills with the interactive features of this game. 
 
 ### User stories
 I want to play a game...
@@ -24,8 +27,8 @@ I want to play a game...
 2. ..that is easy to navigate through.
 3. ..that doesn't require compeeting agianst the clock.
 4. ..that has a nice and clean design.
-5. ..that doesn't play too loud and stressing audio effects on everything you click.
-6. ..that I can come back to and see my old scores.
+5. ..that doesn't play too loud and stressing audio effects on everything I click.
+6. ..that I can see what my previous score was.
 7. ..that I can come back to and play to get my mind off something. With a mindfulness aspect.
 8. ..that I can play to practise my memory skills.
 9. ..that I can play at night with a darker theme.
@@ -39,8 +42,8 @@ I also wanted to make the game with a mindfulness twist to it. The strategy plan
 The main feature was going to be the memory game itself alongside with some other features, such as 
 a 'high score list' with locally scored high scores, a timer, smooth sound effects that indicate if you win or loose
 and the option to play some jazzy background music (that you also can turn off).
-I also wanted the overall theme for the game reflect the mindfulness aspect through the images that I was going
-to use. In this stage the images was not decided yet.
+I also wanted the overall theme for the game to reflect through the images that I was going
+to use for the cards. In this stage the images was not decided yet.
 
 3. **Structure plane** 
 When the key features was set the structure plane was pretty simple. I was going to have a single page with
@@ -48,17 +51,16 @@ all features in it and the keyword simplicity would thereafter guide me through 
 
 4. **Skeleton plane**
 I started sketching out what the layout would be like and got the balance of the page together by dividing 
-it into two main sections of the page. The right sektion of the page was going to cover the majority of the
-page with the memory game feature. I didn't want the left section to be left out entirely and decided to give
-it the space that it needed to provide the information within it as clear as possible.
-
+it into two main sections of the page. The right section of the page was going to cover the majority of the
+page with the memory game feature. In the left section I wanted to add all information about the page in a nice 
+and structured way.
+I didn't want the left section to be left out entirely and decided to give it the space that it needed to 
+provide the information within it as clear as possible for the player to easily understand it.
 
 5. **Surface plane**
 - When I knew how I wanted the structure to be I turned to the internet to find free images to use for my game.
 I ended up on [Freepic.com](https://www.freepik.com/free-vector/potted-plants-set_8271077.htm#page=1&query=plants&position=1)
-where I found the pictures of the plants that I ended up using. For me plants represents a sense of calm and
-anyone who has plants as a hobby can probably attest that the power of taking care of plants really brings
-a mindfulness to both body and soul.
+where I found the pictures of the plants that I ended up using.
 - After that I turned to [Coolors](https://coolors.co/) to find colors that would match the theme of the page.
 I wanted to use a soft color scheme for the default theme and ended up with the following colors:
 ![Color Palette](/assets/images/coolors.png)
@@ -86,7 +88,7 @@ When finishing the game **dark mode**.
 
 #### Changes I made throuought the project
 - Instead of adding the feature of giving the player the option to change background music I decided to replace it
-with a questionmark icon in the Menu/Information section to simply provide the player who doesn't know how to
+with a questionmark icon in the Menu section to simply provide the player who doesn't know how to
 play a memory game with information about how to play.
 I'm sure however that most people today know how to play a memory game, but for me it would feel omitted not to 
 share that information with the player who wants to play but doesn't know how.
@@ -97,9 +99,15 @@ player to get the background music started.
 When the game is finished I decided to add the icon of a winning cup together with the information about how to
 play the game again.
 
+- In my original idea I wanted to store a high score in the Menu section of the page. However scoring
+in a memory game is not the easiest when you play it by yourself. I therefor decided that I was going to store
+the latest round played to make it possible for the player to compare their last game session with the ongoing session.
+This way, for those who are a little bit more competitive, this would encourage the player with an option to try
+to beat that last round time.
+
 ### Features
 The game page is sectioned into two columns. In the right column the actual memory game is based and in the
-left column the logo and Menu/Information section with some other main key features are placed.
+left column the logo and Menu section with some other main key features are placed.
 
 1. **The memory game column features**
     - When you first arrive to the page, the memory column where the memory cards are placed has an overlay
@@ -112,14 +120,14 @@ left column the logo and Menu/Information section with some other main key featu
     - When the player has matched all cards another overlay covers the memory column to indicate that the game
     is finished together with an audio playing.
 
-2. **Menu/Information section**
-    - The Menu/Information section includes a logo together with the name of the game and a container that includes a replay
+2. **Menu section**
+    - The Menu section includes a logo together with the name of the game and a container that includes a replay
     icon, a speaker icon, a questionmark icon, a moves counter, a timer, the last round time and two theme buttons.
 
 3. **Replay, Speaker and Questionmark Icons**
     - When the replay icon is clicked the page reload. This allows the player to restart the game whenever it's
     needed.
-    - When the speaker icon is clicked, the background music starts playing. If the background music is already playing you can
+    - When the speaker icon is clicked, the background music starts playing. While the background music is playing you can
     click on the speaker icon again to stop the music.
     - When the questionmark icon is clicked a modal pops up with information about how to play the game. This modal can be closed
     in two ways, by clicking on the 'X' in the upper right corner, or clicking the 'Close' button on the bottom of the modal.
@@ -130,7 +138,9 @@ left column the logo and Menu/Information section with some other main key featu
     - The timer let's the player know how much time has passed since starting the game. When the game is finished
     the timer is paused.
     - The timestamp next to the 'Last Round' text indicates the time that the player finished the game in the last round of 
-    playing. This to encourage the player to try to beat that time in the ongoing round.
+    playing. This to encourage the player to try to beat that time in the ongoing round. If there's no timestamp
+    next to the 'Last Round' text, the player must play one round and then click on the reload icon to see the time of
+    the last round that is stored.
 
 5. **Theme Buttons**
     - The two buttons represents a theme each. When the player visits the page the light theme is automatically
@@ -139,14 +149,14 @@ left column the logo and Menu/Information section with some other main key featu
     'Dark Theme' button disabled but not the 'Light Theme' button, this to indicate which theme is currently used.
 
 #### Features left to implement
-- **Add opportunity to change music during playing.** In the original idea the third icon in the Menu/Information column was
+- **Add opportunity to change music during playing.** In the original idea the third icon in the Menu column was
 a 'step-forward' icon. This was suppose to include a feature to make it possible to change through different background
 songs. However due to lack of time of finding the perfect songs to match the game and the page I decided to
 leave this to hopefully add it in the future.
 - **Pause button to pause the game while playing.** My mentor suggested that I would add a pause button for the player to be
 able to pause the game while playing. This was something I tried to add to the timer function but without a working result,
 I just simply couldn't get the function to pause the time as I wanted. So unfortunately I had to skip
-that that idé.
+that idé and will hopefully try to make it in the future.
 
 ### Technologies used
 #### Languages
@@ -168,7 +178,7 @@ that that idé.
 - Firefox Developer Tool (built in the Firefox browser)
 - [Coolors](https://coolors.co/)
 - [Figma](https://www.figma.com/)
-- Microsoft Paint
+- Microsoft Paint - to edit the images used.
 
 ### Testing
 #### Manual testing
