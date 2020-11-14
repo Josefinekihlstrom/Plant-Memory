@@ -151,14 +151,19 @@ that that idé.
 ### Testing
 #### Manual testing
 #### Bugs found
-* The cards wouldn't shuffle. Solved the problem by changing the cards variable value to javascript instead of jquery. 
-* Delay in sound effects, click sound also doesn't stop play when locked card is clicked. NOT SOLVED YET.
-* clearInterval not working to stop timer when game is finished. 
-Decided to start from scratch and make a new timer with cleaner code to hopefully get a better understanding of it
-and make it work. New timer made with working clearInterval when game is finished.
-* When testing the game on my iPhone the memory cards wouldn't turn properly when clicking on them. 
+* **Fixed!** The cards wouldn't shuffle when playing the game. Solved the problem by going back and change the cards variable 
+value to javascript code instead of jquery that I wrote from the beginning. The problem must have been caused by 
+a misunderstanding from my side in the code I wrote.
+* **Not fixed yet!** When you click too quick on the next card the card flip audio will sometimes not play. I've tried to solve this 
+issue but could not find a solution that would fix this problem. Due to lack of time this is something I will have to
+fix in the future and the bug is therefor not fixed right now.
+* **Fixed!** The ClearInterval function was not working to stop timer when game is finished. 
+I Decided to start from scratch and make a new timer with cleaner code to hopefully get a better understanding of it
+and make it work. The new timer that was made worked and I was able to pause it when the game was finished.
+* **Fixed!** When testing the game on my iPhone the memory cards wouldn't turn properly when clicking on them. 
 This seemed to look fine when I tried the game out in device toolbar in my Chrome browser. 
-I solved this problem by adding a webkit attribute in my css code for the backface visibility.
+The feature of flipping the cards did not seem to be supported by Safari browsers so I solved this problem by 
+adding a webkit attribute in my css code for the backface visibility.
 
 ### Deployment
 This project was developed in Gitpod and then pushed to GitHub. To deploy the project the following steps were made:
