@@ -27,7 +27,7 @@ var moves = 0;
 let themeLight = true;
 $("#light-theme").attr("disabled", "disabled");
 
-/* ---------- local storage ---------- https://codetheweb.blog/javascript-localstorage/ */
+/* ---------- local storage ---------- */
 let localStorageBestTime = localStorage.getItem("lastRoundTime", timeHour.innerHTML);
 
 
