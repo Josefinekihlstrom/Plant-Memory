@@ -236,6 +236,9 @@ To get to the source of this information: [Click here!](https://docs.github.com/
 - [W3C Schools](https://www.w3schools.com/)
 - [Stack Overflow](https://stackoverflow.com/)
 - [Youtube](https://youtube.com/)
+- [Free Code Camp](https://www.freecodecamp.org/)
+- [Code The Web](https://codetheweb.blog/)
+- [Scotch](https://scotch.io/)
 
 #### Code
 - Starting the game with help from [Stack Overflow](https://stackoverflow.com/questions/5299895/jquery-detecting-and-removing-an-element-clicked)
