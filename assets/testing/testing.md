@@ -165,3 +165,6 @@ To inform the player I've added text about this in the modal itself.
 replay button, the game goes back to its initial state with the light theme. An ideal feature would be that the
 theme was stored locally so that the dark theme remains after clicking on replay. This is noted in the features
 left to implement section in the README file.
+* **Not fixed yet!** When playing the game on my iPhone I noticed that the sound effects where not always playing
+or was playing with a delay. I'm guessing this has something to do with the audio code not being supported in
+Safari browsers. A solution for this bug is not yet found.
