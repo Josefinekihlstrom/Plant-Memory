@@ -179,10 +179,13 @@ left column the logo and Menu section with some other main key features are plac
     the last round that is stored.
 
 5. **Theme Buttons**
-    - The two buttons represents a theme each. When the player visits the page the light theme is automatically
+    - The two buttons represents a theme each. When the player visits the page the first time the light theme is automatically
     showed which makes the 'Ligh Theme' button disabled.
     When the player click on the 'Dark Theme' button the css style for that theme is switched to. This makes the
     'Dark Theme' button disabled but not the 'Light Theme' button, this to indicate which theme is currently used.
+    Though the light theme is the default theme, both of the themes are locally stored. If the player decides 
+    to refresh the page or click on the replay button while playing, the chosen theme from the previous session 
+    will show.
 
 ### Features left to implement
 - **Add opportunity to change music during playing.** 
@@ -202,11 +205,6 @@ When the game is started and the player clicks the questionmark icon which shows
 continnues to run. In an ideal memory game the function of pausing the game when the modal pops up would be
 implemented, but due to lack of time this is something I will have to implement in the future.
 To inform the player I've added text about this in the modal itself.
-
-- **Store the chosen theme** When a player is finishing the game in dark mode and wants to replay by clicking on the
-replay button, the game goes back to its initial state with the light theme. An ideal feature would be that the
-theme was stored locally so that the dark theme remains after clicking on replay. This is something I will have
-to implement in the future due to lack of time when this project was made.
 
 ## Technologies used
 ### Languages

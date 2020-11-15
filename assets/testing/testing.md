@@ -154,6 +154,7 @@ This seemed to look fine when I tried the game out in device toolbar in my Chrom
 The feature of flipping the cards did not seem to be supported by Safari browsers so I solved this problem by 
 adding a webkit attribute in my css code for the backface visibility.
 The code that guided me to solve this bug was found [here](https://stackoverflow.com/questions/42744573/backface-visibility-not-working-in-safari/45145977).
+
 ## Bugs found while testing manually
 * **Fixed!** When matching a pair right after a previous match, the match sound effect would not fire a second time. This 
 was solved by putting the match sound effect to a current time of 0 when being executed.
@@ -161,10 +162,10 @@ was solved by putting the match sound effect to a current time of 0 when being e
 This function of stopping the timer when modal is showing does not exist in this version of the game due to lack
 of time to develop it. This is added to the 'Features left to implement' section in the README file.
 To inform the player I've added text about this in the modal itself.
-* **Not fixed yet!** When a player is finishing the game in dark mode and wants to replay by clicking on the
-replay button, the game goes back to its initial state with the light theme. An ideal feature would be that the
-theme was stored locally so that the dark theme remains after clicking on replay. This is noted in the features
-left to implement section in the README file.
+* **Fixed!** When a player finished the game in dark mode and wants to replay by clicking on the
+replay button, the game would go back to its initial state with the light theme. This was fixed by simply add
+local storage to the themes to make the browser remember which theme was used before getting refreshed or
+the replay icon is clicked.
 * **Not fixed yet!** When playing the game on my iPhone I noticed that the sound effects where not always playing
 or was playing with a delay. I'm guessing this has something to do with the audio code not being supported in
 Safari browsers. A solution for this bug is not yet found.
