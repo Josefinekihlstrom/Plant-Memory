@@ -10,7 +10,7 @@
 - [JSHint](https://jshint.com/)
     - This project was validated with JSHint validator on 14th November 2020 with
         - 20 warnings
-        - One undefined variable
+        - Undefined variable
         - Two unused variables
     
     - All of the 20 warnings was about the following:
@@ -18,8 +18,15 @@
         - 10 "let is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)"
         - 2 "template literal syntax is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)"
         - 3 "arrow function syntax is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)"
-    To solve these warnings i put the following code in the top of my script file:
-    - /*jshint esversion: 6 */
+    - To solve these warnings i put the following code in the top of my script file: /*jshint esversion: 6 */
+    - The undefined variable in my script code was the '$' used for the jQuery code. This cannot be removed
+    since it will break the jQuery code and make it able to work properly.
+    - The two unused variables according to JSHint was the following:
+        - playPause on line 39
+        - restartGame on line 220
+    - These two are functions in the game, playPause to make it possible to play and pause the background music and
+    the restartGame to make it possible to reload the page when the player wants to play again. These cannot be
+    remove since it will break these functions and therefor they must remain in the code.
 
 ## Manual testing
 All manual tests were done in the following browsers:
