@@ -91,8 +91,8 @@ $(function () {
     });
 });
 
+/* ---------- Check the theme ---------- */
 function checktheTheme() {
-    let localStorageTheme = localStorage.getItem("theme");
 
     if (localStorageTheme === "dark") {
 
