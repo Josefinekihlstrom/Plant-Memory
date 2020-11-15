@@ -47,10 +47,18 @@ All manual tests were done in the following browsers:
         icon changes back to initial state.
         - When clicking the speaker icon when game is finished and background music has turned off, background
         music starts playing again and icon is changed to speaker playing sound.
+    - When clicking the questionmark the 'How to play' modal pops up.
+        - When modal is showing, verify that by clicking the 'X' symbol the modal closes.
+        - When modal is showing, verify that by clicking the 'Close' button the modal closes.
+        - If game is started and questionmark icon is clicked, the timer continnues to run when modal pops up.
 
 ### Bugs found while testing manually
-- When matching a pair right after a previous match, the match sound effect would not fire a second time.
+1. When matching a pair right after a previous match, the match sound effect would not fire a second time.
     - This was solved by putting the match sound effect to a current time of 0 when being executed.
+
+2. When the game has been started and the question mark icon is clicked and modal pops up, the timer does not stop.
+This function of stopping the timer when modal is showing does not exist in this version of the game due to lack
+of time to develop it. This is added to the 'Features left to implement' section in the README.md file.
 
 ## User testing
 The user testing is based on the user stories from the README.md file.

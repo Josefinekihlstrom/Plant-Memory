@@ -152,14 +152,22 @@ left column the logo and Menu section with some other main key features are plac
     'Dark Theme' button disabled but not the 'Light Theme' button, this to indicate which theme is currently used.
 
 #### Features left to implement
-- **Add opportunity to change music during playing.** In the original idea the third icon in the Menu column was
+- **Add opportunity to change music during playing.** 
+In the original idea the third icon in the Menu column was
 a 'step-forward' icon. This was suppose to include a feature to make it possible to change through different background
 songs. However due to lack of time of finding the perfect songs to match the game and the page I decided to
 leave this to hopefully add it in the future.
-- **Pause button to pause the game while playing.** My mentor suggested that I would add a pause button for the player to be
+
+- **Pause button to pause the game while playing.** 
+My mentor suggested that I would add a pause button for the player to be
 able to pause the game while playing. This was something I tried to add to the timer function but without a working result,
 I just simply couldn't get the function to pause the time as I wanted. So unfortunately I had to skip
 that idé and will hopefully try to make it in the future.
+
+- **Pause game if modal is showing**
+When the game is started and the player clicks the questionmark icon which shows the 'How to play' modal, the timer
+continnues to run. In an ideal memory game the function of pausing the game when the modal pops up would be
+implemented, but due to lack of time this is something I will have to implement in the future.
 
 ### Technologies used
 #### Languages
