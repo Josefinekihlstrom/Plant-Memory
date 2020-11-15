@@ -39,6 +39,30 @@ let localStorageTheme = localStorage.getItem("theme");
 /* ---------- Check Theme ---------- */
 window.onload = checktheTheme();
 
+function checktheTheme() {
+
+    if (localStorageTheme === "dark") {
+
+       themeLight = false;
+
+       $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").addClass("dark-mode");
+        $(".card-back").attr("src", "assets/images/cardbackbeige.jpg");
+    
+        $("#light-theme").removeAttr("disabled");
+        $("#dark-theme").attr("disabled", "disabled");
+    }
+    if (localStorageTheme === "light") {
+
+        themeLight = true;
+
+        $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").removeClass("dark-mode");
+        $(".card-back").attr("src", "assets/images/cardbackgreen.jpg");
+
+        $("#dark-theme").removeAttr("disabled");
+        $("#light-theme").attr("disabled", "disabled");
+    }
+}
+
 /* ---------- Play/pause music ---------- */
 function playPause() {
     
@@ -90,32 +114,6 @@ $(function () {
         }
     });
 });
-
-/* ---------- Check the theme ---------- */
-function checktheTheme() {
-
-    if (localStorageTheme === "dark") {
-
-       themeLight = false;
-
-       $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").addClass("dark-mode");
-        $(".card-back").attr("src", "assets/images/cardbackbeige.jpg");
-    
-        $("#light-theme").removeAttr("disabled");
-        $("#dark-theme").attr("disabled", "disabled");
-    }
-    if (localStorageTheme === "light") {
-
-        themeLight = true;
-
-        $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").removeClass("dark-mode");
-        $(".card-back").attr("src", "assets/images/cardbackgreen.jpg");
-
-        $("#dark-theme").removeAttr("disabled");
-        $("#light-theme").attr("disabled", "disabled");
-    }
-}
-
 
 /* ---------- Starting the game ---------- */
 
