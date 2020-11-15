@@ -34,7 +34,10 @@ $("#light-theme").attr("disabled", "disabled");
 
 /* ---------- local storage ---------- */
 let localStorageBestTime = localStorage.getItem("lastRoundTime", timeHour.innerHTML);
+let localStorageTheme = localStorage.getItem("theme");
 
+/* ---------- Check Theme ---------- */
+window.onload = checktheTheme();
 
 /* ---------- Play/pause music ---------- */
 function playPause() {
@@ -62,6 +65,7 @@ $(function() {
   $("#dark-theme").click(function() {
 
     themeLight = false;
+    localStorage.setItem("theme", "dark");
 
     $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").addClass("dark-mode");
     $(".card-back").attr("src", "assets/images/cardbackbeige.jpg");
@@ -71,11 +75,12 @@ $(function() {
   });
 });
 
-$(function() {
+$(function () {
     $("#light-theme").click(function() {
         if (themeLight == false) {
 
             themeLight = true;
+            localStorage.setItem("theme", "light");
 
             $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").removeClass("dark-mode");
             $(".card-back").attr("src", "assets/images/cardbackgreen.jpg");
@@ -85,6 +90,31 @@ $(function() {
         }
     });
 });
+
+function checktheTheme() {
+    let localStorageTheme = localStorage.getItem("theme");
+
+    if (localStorageTheme === "dark") {
+
+       themeLight = false;
+
+       $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").addClass("dark-mode");
+        $(".card-back").attr("src", "assets/images/cardbackbeige.jpg");
+    
+        $("#light-theme").removeAttr("disabled");
+        $("#dark-theme").attr("disabled", "disabled");
+    }
+    if (localStorageTheme === "light") {
+
+        themeLight = true;
+
+        $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").removeClass("dark-mode");
+        $(".card-back").attr("src", "assets/images/cardbackgreen.jpg");
+
+        $("#dark-theme").removeAttr("disabled");
+        $("#light-theme").attr("disabled", "disabled");
+    }
+}
 
 
 /* ---------- Starting the game ---------- */
