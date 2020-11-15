@@ -156,6 +156,8 @@ function checkMatch() {
     // if cards match go to disableCards function
     if (firstCard.dataset.id === secondCard.dataset.id) {
         matchCardAudio.play();
+        matchCardAudio.currentTime = 0;
+
         matches = matches + 1;
 
         if (matches == 8) { 

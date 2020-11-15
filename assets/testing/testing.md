@@ -50,6 +50,7 @@ All manual tests were done in the following browsers:
 
 ### Bugs found while testing manually
 - When matching a pair right after a previous match, the match sound effect would not fire a second time.
+    - This was solved by putting the match sound effect to a current time of 0 when being executed.
 
 ## User testing
 The user testing is based on the user stories from the README.md file.
