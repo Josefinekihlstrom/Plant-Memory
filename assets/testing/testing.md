@@ -20,12 +20,12 @@
         - 3 "arrow function syntax is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)"
     - To solve these warnings i put the following code in the top of my script file: /*jshint esversion: 6 */
     - The undefined variable in my script code was the '$' used for the jQuery code. This cannot be removed
-    since it will break the jQuery code and make it able to work properly.
+    since it will break the jQuery code and the game would not work properly.
     - The two unused variables according to JSHint was the following:
         - playPause on line 39
         - restartGame on line 220
     - These two are functions in the game, playPause to make it possible to play and pause the background music and
-    the restartGame to make it possible to reload the page when the player wants to play again. These cannot be
+    the restartGame to make it possible to reload the page when the player click on the replay icon. These cannot be
     remove since it will break these functions and therefor they must remain in the code.
 
 ## Manual testing
@@ -34,7 +34,7 @@ All manual tests were done in the following browsers:
 - Google Chrome
 - Microsoft Edge
 
-1. Open a new browser and verify that the content is loaded correctly.
+1. Open a new browser and verify that the content is loaded correctly without any errors in the inspect console.
 
 2. Memory game section:
     - Click on the 'Start The Game' overlay and the overlay disappears correctly.
@@ -45,7 +45,7 @@ All manual tests were done in the following browsers:
         - It no match: Both cards unflip and sound effect fires. Moves counter adds one.
     - When clicking on a third card before unmatched cards unflip, the board is locked.
     - When clicking on the first card after it's already been clicked, it still counts as first card and does
-    not affect when the second card getting clicked.
+    not affect when the second card is getting clicked.
     - When clicking on the second card after it's already been clicked, it still counts as second card and
     checkMatch function fires as normal.
     - When all cards are matched, timer stops, winning sound effect fires and 'Congratulations' overlay covers the memory game.
@@ -55,22 +55,22 @@ All manual tests were done in the following browsers:
         - Verified by pressing the 'Start The Game' overlay that the cards are being reshuffled.
         - If a round has been played and finished before clicking the replay button, the time stamp from the last
         round appears in the menu section under the timer.
-    - When clicking on the speaker icon the background music starts playing and the icon changes to a speaker playing sound.
+    - When clicking on the speaker icon the background music starts playing and the icon changes to a speaker icon that is playing sound.
         - When clicking the speaker icon again the music stops and the icon changes back to the initial state.
         - When background music is playing, the other sound effects aren't negatively affected.
         - When finishing the game while background music is playing, the background music stops correctly and
         icon changes back to initial state.
-        - When clicking the speaker icon when game is finished and background music has turned off, background
-        music starts playing again and icon is changed to speaker playing sound.
+        - When clicking the speaker icon when game is finished and background music was turned off, background
+        music starts playing again and icon is changed to speaker icon that is playing sound.
     - When clicking the questionmark the 'How to play' modal pops up.
-        - When modal is showing, verify that by clicking the 'X' symbol the modal closes.
-        - When modal is showing, verify that by clicking the 'Close' button the modal closes.
-        - If game is started and questionmark icon is clicked, the timer continnues to run when modal pops up.
+        - When modal is showing, it is verified that by clicking the 'X' symbol the modal closes.
+        - When modal is showing, it is verified that by clicking the 'Close' button the modal closes.
+        - If game is started and questionmark icon is clicked, the timer continues to run when modal pops up.
         **This is noted as a bug in the 'Bugs found' section further down.**
     - When light theme is active the light theme button is disabled.
-        - When clickin on the dark theme button the theme is switched to dark mode.
+        - When clicking on the dark theme button the theme is switched to dark mode.
     - When dark theme is active the dark theme button is disabled.
-        - When clicking on the light theme button the theme is switched to dark mode.
+        - When clicking on the light theme button the theme is switched to light mode.
     - When the game is played with the dark theme and the replay button is clicked, the game goes back to its
     initial state and light theme.
     **This is noted as a bug in the 'Bugs found' section further down.**
@@ -96,9 +96,9 @@ The user testing is based on the user stories from the README file.
     makes this game both fun and enjoyable during playing.
 
 2. **..that is easy to navigate through.**
-    - Clear instructions on how to start the game with the large play ucon and text right under it.
+    - Clear instructions on how to start the game with the large play icon and text right under it.
     - Large buttons with clear text that describes the buttons purposes before clicking them.
-    - The design of the icons reflect the meaning behind them.
+    - The design of the icons reflect the meaning behind their functions.
 
 3. **..that doesn't require compeeting agianst the clock.**
     - The timer function only shows the time that has passed since starting the game.
@@ -121,7 +121,8 @@ The user testing is based on the user stories from the README file.
     this game to add an extra touch of relaxation while playing.
 
 6. **..that I can see what my previous score was.**
-    - When replaying the game you can se your previous score in the menu section, right under the timer.
+    - When replaying the game you can se your previous time you finished the game in inside the menu section, 
+    right under the timer.
 
 7. **..that I can come back to and play to get my mind off something. With a mindfulness aspect.**
     - This user storie can be referenced with the answears from point number 3-5.
@@ -136,9 +137,9 @@ The user testing is based on the user stories from the README file.
     as strong and thus not as strenuous for the eyes to look at.
 
 ## Bugs found during development
-* **Fixed!** The cards wouldn't shuffle when playing the game. Solved the problem by going back and change the cards variable 
-value to javascript code instead of jquery that I wrote from the beginning. The problem must have been caused by 
-a misunderstanding from my side in the code I wrote.
+* **Fixed!** The cards wouldn't shuffle when playing the game. Solved the problem by going back and change 
+the cards variable code from jQuery to javascript code. The problem must have been caused by 
+a misunderstanding from my side in the code I wrote and was therefor not written correct to work as I wanted it to.
 * **Fixed!** When you clicked too quick on the next card the card flip audio would sometimes not play. 
 Probably because the sound wasn't done playing the first time clicking the card.
 I solved it by putting the flip card sound to a current time of 0 when a card is clicked. This made it possible to
