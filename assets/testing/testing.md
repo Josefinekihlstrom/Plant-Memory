@@ -1,6 +1,6 @@
 # Testing
-[Go back to the main README.md file](README.md)
-[Go to the Plant Memory live project here!](https://josefinekihlstrom.github.io/Plant-Memory/)
+- [Go back to the main README file](README.md)
+- [Go to the Plant Memory live project here!](https://josefinekihlstrom.github.io/Plant-Memory/)
 
 ## Automated Testing
 - [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
@@ -51,11 +51,11 @@ All manual tests were done in the following browsers:
         - When modal is showing, verify that by clicking the 'X' symbol the modal closes.
         - When modal is showing, verify that by clicking the 'Close' button the modal closes.
         - If game is started and questionmark icon is clicked, the timer continnues to run when modal pops up.
-        This is noted as a bug in 'Bugs found' section in README.md file.
+        **This is noted as a bug in 'Bugs found' section in README file.**
 
 
 ## User testing
-The user testing is based on the user stories from the README.md file.
+The user testing is based on the user stories from the README file.
 
 **I want to play a game...**
 
