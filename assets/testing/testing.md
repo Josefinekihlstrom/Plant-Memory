@@ -14,6 +14,20 @@
         - Two unused variables
 
 ## Manual testing
+All manual tests were done in the following browsers:
+- Firefox
+- Google Chrome
+- Microsoft Edge
+
+1. Open a new browser and verify that the content is loaded correctly.
+2. Memory game section:
+    - Click on the 'Start The Game' overlay and the overlay disappears correctly.
+    - Timer is starting after overlay is removed.
+    - When clicking the first card, sound effect fires and the card stays flipped.
+    - When clicking the second card, second card flips and sound effect fires:
+        - If match: Both cards stays flipped and a sound effect fires.
+        - It no match: Both cards unflip and sound effect fires.
+    - When clicking on a third card before unmatched cards unflip, the board is locked 
 
 ## User testing
 The user testing is based on the user stories from the README.md file.
