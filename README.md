@@ -185,19 +185,7 @@ that idé and will hopefully try to make it in the future.
 - [Favicon](https://favicon.io/)
 
 ### Testing
-- [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
-    - This project passed the W3C CSS Validator without any remarks. 14th November - 2020
-- [W3C Markup Validation](https://validator.w3.org/)
-    - This project passed the W3C Markup Validator without any remarks. 14th November - 2020
-- [JSHint](https://jshint.com/)
-    - This project was validated with JSHint validator with
-        - 20 warnings
-        - One undefined variable
-        - Two unused variables
-
-#### Manual testing
-
-
+[Click here to view the testing for this project!](assets/testing/testing.md)
 
 #### Bugs found
 * **Fixed!** The cards wouldn't shuffle when playing the game. Solved the problem by going back and change the cards variable 
