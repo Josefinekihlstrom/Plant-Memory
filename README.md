@@ -46,14 +46,17 @@ I also wanted the overall theme for the game to reflect through the images that 
 to use for the cards. In this stage the images was not decided yet.
 
 3. **Structure plane** 
-When the key features was set the structure plane was pretty simple. I was going to have a single page with
-all features in it and the keyword simplicity would thereafter guide me through the skeleton plane.
+When the key features was set the structure plane was pretty simple. I was going to have just a single page with
+all the features in it but divided into different sections to make out the most of it and get a nice balance. 
+My initial structure is based out of squares with information withing the main square that would be the 
+portview. One square would contain the icon and the name of the game, another square would contain the menu with
+the interaction functions and then the last square would be the memory game itself with its own features.
 
 4. **Skeleton plane**
 I started sketching out what the layout would be like and got the balance of the page together by dividing 
 it into two main sections of the page. The right section of the page was going to cover the majority of the
-page with the memory game feature. In the left section I wanted to add all information about the page in a nice 
-and structured way.
+page with the memory game feature. In the left section I wanted to add all information about the page together 
+with the different features that I wanted to add in such as the buttons, icons and timer function.
 I didn't want the left section to be left out entirely and decided to give it the space that it needed to 
 provide the information within it as clear as possible for the player to easily understand it.
 
