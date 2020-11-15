@@ -12,6 +12,14 @@
         - 20 warnings
         - One undefined variable
         - Two unused variables
+    
+    - All of the 20 warnings was about the following:
+        - 5 "const is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)"
+        - 10 "let is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)"
+        - 2 "template literal syntax is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)"
+        - 3 "arrow function syntax is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)"
+    To solve these warnings i put the following code in the top of my script file:
+    - /*jshint esversion: 6 */
 
 ## Manual testing
 All manual tests were done in the following browsers:
