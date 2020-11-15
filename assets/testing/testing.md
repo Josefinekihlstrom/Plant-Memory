@@ -1,5 +1,5 @@
 # Testing
-- [Go back to the main README file](README.md)
+- [Go back to the project and README file](https://github.com/Josefinekihlstrom/Plant-Memory)
 - [Go to the Plant Memory live project here!](https://josefinekihlstrom.github.io/Plant-Memory/)
 
 ## Automated Testing
