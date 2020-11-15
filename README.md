@@ -281,7 +281,7 @@ To get to the source of this information: [Click here!](https://docs.github.com/
 - Play/pause the music function with help from [Invention Tricks](https://www.youtube.com/watch?v=wffK2OIt8u0)
 - Timer function with help from [WEB CIFAR](https://www.youtube.com/watch?v=_a4XCarxwr8)
 - Count moves with help from [Sandra Israel-Ovirih](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves)
-- Localstorage for last played round with help from [Ethan](https://codetheweb.blog/javascript-localstorage/)
+- Localstorage for last played round and themes with help from [Ethan](https://codetheweb.blog/javascript-localstorage/)
 
 ### Thank you
 Thank you to the following people:
