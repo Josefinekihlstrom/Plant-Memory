@@ -169,3 +169,7 @@ the replay icon is clicked.
 * **Not fixed yet!** When playing the game on my iPhone I noticed that the sound effects where not always playing
 or was playing with a delay. I'm guessing this has something to do with the audio code not being supported in
 Safari browsers. A solution for this bug is not yet found.
+* **Not fixed yet!** When the background music is finished playing you have to double click on the speaker icon
+to play the music again. I thought this would be an easy bug to solve by using the currentTime set to 0 for the
+background audio. However this did not work out as I was hoping and despite trying to google for more answears
+I could not find a solution for this bug.
