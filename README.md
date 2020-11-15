@@ -196,31 +196,6 @@ To inform the player I've added text about this in the modal itself.
 ### Testing
 [Click here to view the testing for this project!](assets/testing/testing.md)
 
-#### Bugs found during development
-* **Fixed!** The cards wouldn't shuffle when playing the game. Solved the problem by going back and change the cards variable 
-value to javascript code instead of jquery that I wrote from the beginning. The problem must have been caused by 
-a misunderstanding from my side in the code I wrote.
-* **Fixed!** When you clicked too quick on the next card the card flip audio would sometimes not play. 
-Probably because the sound wasn't done playing the first time clicking the card.
-I solved it by putting the flip card sound to a current time of 0 when a card is clicked. This made it possible to
-play the audio quickly after it's first been executed.
-The code that guided me solve this bug was found [here](https://stackoverflow.com/questions/1933969/sound-effects-in-javascript-html5).
-* **Fixed!** The ClearInterval function was not working to stop timer when game is finished. 
-I Decided to start from scratch and make a new timer with cleaner code to hopefully get a better understanding of 
-my mistake and make it work properly.
-The code that guided me to rebuild my timer was found [here](https://www.youtube.com/watch?v=_a4XCarxwr8).
-* **Fixed!** When testing the game on my iPhone the memory cards wouldn't turn properly when clicking on them. 
-This seemed to look fine when I tried the game out in device toolbar in my Chrome browser. 
-The feature of flipping the cards did not seem to be supported by Safari browsers so I solved this problem by 
-adding a webkit attribute in my css code for the backface visibility.
-The code that guided me to solve this bug was found [here](https://stackoverflow.com/questions/42744573/backface-visibility-not-working-in-safari/45145977).
-#### Bugs found while testing manually
-* **Fixed!** When matching a pair right after a previous match, the match sound effect would not fire a second time. This 
-was solved by putting the match sound effect to a current time of 0 when being executed.
-* **Not fixed yet!** When the game has been started and the question mark icon is clicked and modal pops up, the timer does not stop.
-This function of stopping the timer when modal is showing does not exist in this version of the game due to lack
-of time to develop it. This is added to the 'Features left to implement' section in the README.md file.
-To inform the player I've added text about this in the modal itself.
 ### Deployment
 This project was developed in Gitpod and then pushed to GitHub. To deploy the project the following steps were made:
 
