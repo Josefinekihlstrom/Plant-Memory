@@ -63,15 +63,9 @@ $(function() {
 
     themeLight = false;
 
-    $("body").addClass("dark-mode");
-    $(".logo").addClass("dark-mode");
-    $(".logo h1").addClass("dark-mode");
-    $(".high-score").addClass("dark-mode");
-    $(".memory-game").addClass("dark-mode");
+    $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").addClass("dark-mode");
     $(".card-back").attr("src", "assets/images/cardbackbeige.jpg");
-    $(".start-game").addClass("dark-mode");
-    $(".overlay-finish").addClass("dark-mode");
-
+    
     $("#light-theme").removeAttr("disabled");
     $("#dark-theme").attr("disabled", "disabled");
   });
@@ -83,14 +77,8 @@ $(function() {
 
             themeLight = true;
 
-            $("body").removeClass("dark-mode");
-            $(".logo").removeClass("dark-mode");
-            $(".logo h1").removeClass("dark-mode");
-            $(".high-score").removeClass("dark-mode");
-            $(".memory-game").removeClass("dark-mode");
+            $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").removeClass("dark-mode");
             $(".card-back").attr("src", "assets/images/cardbackgreen.jpg");
-            $(".start-game").removeClass("dark-mode");
-            $(".overlay-finish").removeClass("dark-mode");
 
             $("#dark-theme").removeAttr("disabled");
             $("#light-theme").attr("disabled", "disabled");
