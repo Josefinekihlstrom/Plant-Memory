@@ -3,7 +3,10 @@ var clickAudio = new Audio('assets/audio/click-card.mp3');
 var matchCardAudio = new Audio('assets/audio/cards-match.wav');
 var winAudio = new Audio('assets/audio/win-game.wav');
 var backgroundAudio = new Audio('assets/audio/background-sound.mp3');
-backgroundAudio.volume = 0.3;
+backgroundAudio.volume = 0.2;
+clickAudio.volume = 0.5;
+matchCardAudio.volume = 0.6;
+winAudio.volume = 0.7;
 var playPauseIcon = document.getElementById('play-pause');
 var count = 0;
 
