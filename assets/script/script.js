@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /* ---------- Audio variables ---------- */
 var clickAudio = new Audio('assets/audio/click-card.mp3');
 var matchCardAudio = new Audio('assets/audio/cards-match.wav');
