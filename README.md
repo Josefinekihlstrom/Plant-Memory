@@ -1,4 +1,29 @@
 # Plant Memory
+## Content
+- [About](#about)
+- [UX](#ux)
+    - [UX goals](#ux-goals)
+    - [User stories](#user-stories)
+    - [Design process](#design-process)
+    - [Wireframes](#wireframes)
+    - [Changes I made throughout the project](#changes-i-made-throuought-the-project)
+- [Features](#features)
+    - [Features left to implement](#features-left-to-implement)
+- [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Libraries](#libraries)
+    - [Technologies](#technologies)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Cloning This Project](#cloning-this-project)
+- [Credits](#credits)
+    - [Media](#media)
+- [Acknowledgements](#acknowledgements)
+    - [Pages used to find information](#pages-used-to-find-information)
+    - [Code](#code)
+    - [Thank you](#thank-you)
+- [Disclaimer](#disclaimer)
+
 ## About
 
 ![Screenshot](assets/images/screenshot.png)
@@ -70,7 +95,7 @@ I wanted to use a soft color scheme for the default theme and ended up with the 
 - The logo was then made with the technology of [Free Lodge Design](https://www.freelogodesign.org).
 - The font that I decided to use throuought the project was [Amatic](https://fonts.google.com/specimen/Amatic+SC?query=amatic)
 
-#### Wireframes
+### Wireframes
 ![wireframe1](/assets/wireframes/wireframe1.jpg)
 Before starting the memory game.
 
@@ -89,7 +114,7 @@ Overlook of all card images that will be used **dark mode**.
 ![wireframe6](/assets/wireframes/wireframe6.jpg)
 When finishing the game **dark mode**.
 
-#### Changes I made throuought the project
+### Changes I made throuought the project
 - Instead of adding the feature of giving the player the option to change background music I decided to replace it
 with a questionmark icon in the Menu section to simply provide the player who doesn't know how to
 play a memory game with information about how to play.
@@ -108,7 +133,7 @@ the latest round played to make it possible for the player to compare their last
 This way, for those who are a little bit more competitive, this would encourage the player with an option to try
 to beat that last round time.
 
-### Features
+## Features
 The game page is sectioned into two columns. In the right column the actual memory game is based and in the
 left column the logo and Menu section with some other main key features are placed.
 
@@ -151,7 +176,7 @@ left column the logo and Menu section with some other main key features are plac
     When the player click on the 'Dark Theme' button the css style for that theme is switched to. This makes the
     'Dark Theme' button disabled but not the 'Light Theme' button, this to indicate which theme is currently used.
 
-#### Features left to implement
+### Features left to implement
 - **Add opportunity to change music during playing.** 
 In the original idea the third icon in the Menu column was
 a 'step-forward' icon. This was suppose to include a feature to make it possible to change through different background
@@ -175,19 +200,19 @@ replay button, the game goes back to its initial state with the light theme. An 
 theme was stored locally so that the dark theme remains after clicking on replay. This is something I will have
 to implement in the future due to lack of time when this project was made.
 
-### Technologies used
-#### Languages
+## Technologies used
+### Languages
 - HTML5
 - CSS
 - Javascript
 
-#### Libraries
+### Libraries
 - [Bootstrap](https://getbootstrap.com/)
 - [FontAwesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [jQuery](https://jquery.com/)
 
-#### Technologies
+### Technologies
 - [Free Lodge Design](https://www.freelogodesign.org)
 - [Gitpod](https://www.gitpod.io/)
 - [Github](https://github.com/)
@@ -198,10 +223,10 @@ to implement in the future due to lack of time when this project was made.
 - Microsoft Paint - to edit the images used.
 - [Favicon](https://favicon.io/)
 
-### Testing
+## Testing
 [Click here to view the testing for this project!](assets/testing/testing.md)
 
-### Deployment
+## Deployment
 This project was developed in Gitpod and then pushed to GitHub. To deploy the project the following steps were made:
 
 1. Log in to [GitHub](https://github.com/) and go to my [GitHub profile](https://github.com/Josefinekihlstrom).
@@ -214,7 +239,7 @@ This project was developed in Gitpod and then pushed to GitHub. To deploy the pr
 
 Go to the Plant Memory live website here: [Plant Memory](https://josefinekihlstrom.github.io/Plant-Memory/)
 
-### Cloning this project
+## Cloning this project
 If you want to work further on my project, go ahead and clone it following these steps:
 
 1. Go to the top of the [Josefinekihlstrom/Plant-Memory](https://github.com/Josefinekihlstrom/Plant-Memory) repository.
@@ -226,17 +251,17 @@ If you want to work further on my project, go ahead and clone it following these
 
 To get to the source of this information: [Click here!](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
-### Credits
+## Credits
 
-#### Media
+### Media
 - [Memory Images](https://www.freepik.com/free-vector/potted-plants-set_8271077.htm#page=1&query=plants&position=1)
 - [Background Music](https://www.bensound.com/royalty-free-music)
 - [Soundeffect when flipping the cards](https://www.soundjay.com/button/sounds/button-20.mp3)
 - [Soundeffect when getting a match](https://freesound.org/people/dersuperanton/sounds/433646/)
 - [Soundeffect when winning the game](https://freesound.org/people/Fupicat/sounds/521643/)
 
-### Acknowledgements
-#### Pages used to find information
+## Acknowledgements
+### Pages used to find information
 - [W3C Schools](https://www.w3schools.com/)
 - [Stack Overflow](https://stackoverflow.com/)
 - [Youtube](https://youtube.com/)
@@ -244,7 +269,7 @@ To get to the source of this information: [Click here!](https://docs.github.com/
 - [Code The Web](https://codetheweb.blog/)
 - [Scotch](https://scotch.io/)
 
-#### Code
+### Code
 - Starting the game with help from [Stack Overflow](https://stackoverflow.com/questions/5299895/jquery-detecting-and-removing-an-element-clicked)
 - Memory game structure with help from [freeCodeCamp.org](https://www.youtube.com/watch?v=ZniVgo8U7ek/)
 - Play/pause the music function with help from [Invention Tricks](https://www.youtube.com/watch?v=wffK2OIt8u0)
@@ -252,10 +277,10 @@ To get to the source of this information: [Click here!](https://docs.github.com/
 - Count moves with help from [Sandra Israel-Ovirih](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves)
 - Localstorage for last played round with help from [Ethan](https://codetheweb.blog/javascript-localstorage/)
 
-#### Thank you
+### Thank you
 Thank you to the following people:
 * My mentor Sen Owonikoko.
 * Slack community for helping me when I thought my project was lost forever due to a dockerfile change.
 
-### Disclaimer
+## Disclaimer
 This website was created for educational use only.
