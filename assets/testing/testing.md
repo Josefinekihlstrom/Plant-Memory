@@ -20,14 +20,36 @@ All manual tests were done in the following browsers:
 - Microsoft Edge
 
 1. Open a new browser and verify that the content is loaded correctly.
+
 2. Memory game section:
     - Click on the 'Start The Game' overlay and the overlay disappears correctly.
     - Timer is starting after overlay is removed.
     - When clicking the first card, sound effect fires and the card stays flipped.
     - When clicking the second card, second card flips and sound effect fires:
-        - If match: Both cards stays flipped and a sound effect fires.
-        - It no match: Both cards unflip and sound effect fires.
-    - When clicking on a third card before unmatched cards unflip, the board is locked 
+        - If match: Both cards stays flipped and a sound effect fires. Moves counter adds one.
+        - It no match: Both cards unflip and sound effect fires. Moves counter adds one.
+    - When clicking on a third card before unmatched cards unflip, the board is locked.
+    - When clicking on the first card after it's already been clicked, it still counts as first card and does
+    not affect when the second card getting clicked.
+    - When clicking on the second card after it's already been clicked, it still counts as second card and
+    checkMatch function fires as normal.
+    - When all cards are matched, timer stops, winning sound effect fires and 'Congratulations' overlay covers the memory game.
+
+3. Menu section:
+    - When replay icon is clicked the page reloads and 'Start The Game' overlay appears.
+        - Verified by pressing the 'Start The Game' overlay that the cards are being reshuffled.
+        - If a round has been played and finished before clicking the replay button, the time stamp from the last
+        round appears in the menu section under the timer.
+    - When clicking on the speaker icon the background music starts playing and the icon changes to a speaker playing sound.
+        - When clicking the speaker icon again the music stops and the icon changes back to the initial state.
+        - When background music is playing, the other sound effects aren't negatively affected.
+        - When finishing the game while background music is playing, the background music stops correctly and
+        icon changes back to initial state.
+        - When clicking the speaker icon when game is finished and background music has turned off, background
+        music starts playing again and icon is changed to speaker playing sound.
+
+### Bugs found while testing manually
+- When matching a pair right after a previous match, the match sound effect would not fire a second time.
 
 ## User testing
 The user testing is based on the user stories from the README.md file.
