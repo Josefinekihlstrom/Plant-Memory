@@ -75,6 +75,16 @@ All manual tests were done in the following browsers:
     initial state and light theme.
     **This is noted as a bug in the 'Bugs found' section further down.**
 
+All of the above tests were done in the Google Chrome Device Toolbar on the following devices:
+
+- iPad
+- iPad Pro
+- iPhone 6/7/8
+- Galaxy S5
+
+1. Make sure the game is responsive to the device.
+2. Make sure that unnecessary text in the overlays disappears on phone devices.
+
 
 ## User testing
 The user testing is based on the user stories from the README file.
