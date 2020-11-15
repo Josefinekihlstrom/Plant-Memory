@@ -170,6 +170,11 @@ continnues to run. In an ideal memory game the function of pausing the game when
 implemented, but due to lack of time this is something I will have to implement in the future.
 To inform the player I've added text about this in the modal itself.
 
+- **Store the chosen theme** When a player is finishing the game in dark mode and wants to replay by clicking on the
+replay button, the game goes back to its initial state with the light theme. An ideal feature would be that the
+theme was stored locally so that the dark theme remains after clicking on replay. This is something I will have
+to implement in the future due to lack of time when this project was made.
+
 ### Technologies used
 #### Languages
 - HTML5

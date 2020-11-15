@@ -51,7 +51,14 @@ All manual tests were done in the following browsers:
         - When modal is showing, verify that by clicking the 'X' symbol the modal closes.
         - When modal is showing, verify that by clicking the 'Close' button the modal closes.
         - If game is started and questionmark icon is clicked, the timer continnues to run when modal pops up.
-        **This is noted as a bug in 'Bugs found' section in README file.**
+        **This is noted as a bug in the 'Bugs found' section further down.**
+    - When light theme is active the light theme button is disabled.
+        - When clickin on the dark theme button the theme is switched to dark mode.
+    - When dark theme is active the dark theme button is disabled.
+        - When clicking on the light theme button the theme is switched to dark mode.
+    - When the game is played with the dark theme and the replay button is clicked, the game goes back to its
+    initial state and light theme.
+    **This is noted as a bug in the 'Bugs found' section further down.**
 
 
 ## User testing
@@ -125,5 +132,9 @@ The code that guided me to solve this bug was found [here](https://stackoverflow
 was solved by putting the match sound effect to a current time of 0 when being executed.
 * **Not fixed yet!** When the game has been started and the question mark icon is clicked and modal pops up, the timer does not stop.
 This function of stopping the timer when modal is showing does not exist in this version of the game due to lack
-of time to develop it. This is added to the 'Features left to implement' section in the README.md file.
+of time to develop it. This is added to the 'Features left to implement' section in the README file.
 To inform the player I've added text about this in the modal itself.
+* **Not fixed yet!** When a player is finishing the game in dark mode and wants to replay by clicking on the
+replay button, the game goes back to its initial state with the light theme. An ideal feature would be that the
+theme was stored locally so that the dark theme remains after clicking on replay. This is noted in the features
+left to implement section in the README file.
