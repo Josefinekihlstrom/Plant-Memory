@@ -168,6 +168,7 @@ that idé and will hopefully try to make it in the future.
 When the game is started and the player clicks the questionmark icon which shows the 'How to play' modal, the timer
 continnues to run. In an ideal memory game the function of pausing the game when the modal pops up would be
 implemented, but due to lack of time this is something I will have to implement in the future.
+To inform the player I've added text about this in the modal itself.
 
 ### Technologies used
 #### Languages
@@ -195,7 +196,7 @@ implemented, but due to lack of time this is something I will have to implement 
 ### Testing
 [Click here to view the testing for this project!](assets/testing/testing.md)
 
-#### Bugs found
+#### Bugs found during development
 * **Fixed!** The cards wouldn't shuffle when playing the game. Solved the problem by going back and change the cards variable 
 value to javascript code instead of jquery that I wrote from the beginning. The problem must have been caused by 
 a misunderstanding from my side in the code I wrote.
@@ -213,7 +214,13 @@ This seemed to look fine when I tried the game out in device toolbar in my Chrom
 The feature of flipping the cards did not seem to be supported by Safari browsers so I solved this problem by 
 adding a webkit attribute in my css code for the backface visibility.
 The code that guided me to solve this bug was found [here](https://stackoverflow.com/questions/42744573/backface-visibility-not-working-in-safari/45145977).
-
+#### Bugs found while testing manually
+* **Fixed!** When matching a pair right after a previous match, the match sound effect would not fire a second time. This 
+was solved by putting the match sound effect to a current time of 0 when being executed.
+* **Not fixed yet!** When the game has been started and the question mark icon is clicked and modal pops up, the timer does not stop.
+This function of stopping the timer when modal is showing does not exist in this version of the game due to lack
+of time to develop it. This is added to the 'Features left to implement' section in the README.md file.
+To inform the player I've added text about this in the modal itself.
 ### Deployment
 This project was developed in Gitpod and then pushed to GitHub. To deploy the project the following steps were made:
 
