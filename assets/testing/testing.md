@@ -117,7 +117,8 @@ The user testing is based on the user stories from the README file.
         - The card is flipping
         - The card is matching
         - The game is finished
-    - The background music is optional to use and can at any time be turned off.
+    - The jazzy background music is optional to use and can at any time be turned off. The music is added to
+    this game to add an extra touch of relaxation while playing.
 
 6. **..that I can see what my previous score was.**
     - When replaying the game you can se your previous score in the menu section, right under the timer.
