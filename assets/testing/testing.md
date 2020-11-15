@@ -158,14 +158,14 @@ The code that guided me to solve this bug was found [here](https://stackoverflow
 ## Bugs found while testing manually
 * **Fixed!** When matching a pair right after a previous match, the match sound effect would not fire a second time. This 
 was solved by putting the match sound effect to a current time of 0 when being executed.
-* **Not fixed yet!** When the game has been started and the question mark icon is clicked and modal pops up, the timer does not stop.
-This function of stopping the timer when modal is showing does not exist in this version of the game due to lack
-of time to develop it. This is added to the 'Features left to implement' section in the README file.
-To inform the player I've added text about this in the modal itself.
 * **Fixed!** When a player finished the game in dark mode and wants to replay by clicking on the
 replay button, the game would go back to its initial state with the light theme. This was fixed by simply add
 local storage to the themes to make the browser remember which theme was used before getting refreshed or
 the replay icon is clicked.
+* **Not fixed yet!** When the game has been started and the question mark icon is clicked and modal pops up, the timer does not stop.
+This function of stopping the timer when modal is showing does not exist in this version of the game due to lack
+of time to develop it. This is added to the 'Features left to implement' section in the README file.
+To inform the player I've added text about this in the modal itself.
 * **Not fixed yet!** When playing the game on my iPhone I noticed that the sound effects where not always playing
 or was playing with a delay. I'm guessing this has something to do with the audio code not being supported in
 Safari browsers. A solution for this bug is not yet found.
