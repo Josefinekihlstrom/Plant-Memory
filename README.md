@@ -121,11 +121,12 @@ Overlook of all card images that will be used **dark mode**.
 When finishing the game **dark mode**.
 
 ### Changes I made throuought the project
-- Instead of adding the feature of giving the player the option to change background music I decided to replace it
-with a questionmark icon in the Menu section to simply provide the player who doesn't know how to
-play a memory game with information about how to play.
+- In the original idéa, as you can se in the wireframes. The third icon in the menu section is a 'step-forward' icon.
+This was going to be the feature of giving the player the option to change background music while playing.
+But I decided to replace it with a questionmark icon to simply provide the players who doesn't know how to
+play a memory game with information about how to play instead.
 I'm sure however that most people today know how to play a memory game, but for me it would feel omitted not to 
-share that information with the player who wants to play but doesn't know how.
+share that information if that would be the case for the person who decides to play this game.
 
 - Some overall text and layout were changed in the overlays to give a better overwiev of the information 
 provided in them. I added text under the play button to indicate how to start the game and encourage the 
@@ -135,8 +136,9 @@ play the game again.
 
 - In my original idea I wanted to store a high score in the Menu section of the page. However scoring
 in a memory game is not the easiest when you play it by yourself. I therefor decided that I was going to store
-the latest round played to make it possible for the player to compare their last game session with the ongoing session.
-This way, for those who are a little bit more competitive, this would encourage the player with an option to try
+the time in the lates round played to make it possible for the player to compare their last game session with 
+the ongoing session.
+This way, for those who are a little bit more competitive, it would encourage the player with an option to try
 to beat that last round time.
 
 ## Features
@@ -155,12 +157,12 @@ left column the logo and Menu section with some other main key features are plac
     is finished together with an audio playing.
 
 2. **Menu section**
-    - The Menu section includes a logo together with the name of the game and a container that includes a replay
+    - The Menu section includes a logo together with the name of the game and a menu section that includes a replay
     icon, a speaker icon, a questionmark icon, a moves counter, a timer, the last round time and two theme buttons.
 
 3. **Replay, Speaker and Questionmark Icons**
     - When the replay icon is clicked the page reload. This allows the player to restart the game whenever it's
-    needed.
+    needed. The game is always reloaded with the light theme.
     - When the speaker icon is clicked, the background music starts playing. While the background music is playing you can
     click on the speaker icon again to stop the music.
     - When the questionmark icon is clicked a modal pops up with information about how to play the game. This modal can be closed
@@ -168,7 +170,7 @@ left column the logo and Menu section with some other main key features are plac
 
 4. **Moves, Timer and Last Round**
     - The number next to the text 'Moves' indicates how many times the player has made a round of clicking two
-    cards in the of the ongoing game round.
+    cards in the ongoing game round.
     - The timer let's the player know how much time has passed since starting the game. When the game is finished
     the timer is paused.
     - The timestamp next to the 'Last Round' text indicates the time that the player finished the game in the last round of 
@@ -219,15 +221,15 @@ to implement in the future due to lack of time when this project was made.
 - [jQuery](https://jquery.com/)
 
 ### Technologies
-- [Free Lodge Design](https://www.freelogodesign.org)
+- [Free Lodge Design](https://www.freelogodesign.org) - Used to make the logo for the page.
 - [Gitpod](https://www.gitpod.io/)
 - [Github](https://github.com/)
 - Google Chrome Developer Tool (built in the Google Chrome browser)
 - Firefox Developer Tool (built in the Firefox browser)
-- [Coolors](https://coolors.co/)
-- [Figma](https://www.figma.com/)
-- Microsoft Paint - to edit the images used.
-- [Favicon](https://favicon.io/)
+- [Coolors](https://coolors.co/) - Used to come up with the color scheme.
+- [Figma](https://www.figma.com/) - Used to make the wireframes
+- Microsoft Paint - Used to edit the images.
+- [Favicon](https://favicon.io/) - Used to make a favicon icon.
 
 ## Testing
 [Click here to view the testing for this project!](assets/testing/testing.md)
@@ -286,6 +288,7 @@ To get to the source of this information: [Click here!](https://docs.github.com/
 ### Thank you
 Thank you to the following people:
 * My mentor Sen Owonikoko.
+* My fellow Code Institute friend Qim for all support along the way.
 * Slack community for helping me when I thought my project was lost forever due to a dockerfile change.
 
 ## Disclaimer
