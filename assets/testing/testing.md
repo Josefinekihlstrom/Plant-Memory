@@ -85,12 +85,17 @@ All of the above tests were done in the Google Chrome Device Toolbar on the foll
 
 - iPad
 - iPad Pro
+- iPhone 5/SE
 - iPhone 6/7/8
 - Galaxy S5
 
-1. Make sure the game is responsive to the device.
+1. Responsiveness.
+    - Check that the content fits into all viewports.
+    - Check that on iPad, iPhone 5/SE, iPhone 6/7/8 and Galaxy S5 the sections are presented on a row each
+    starting with the logo, menu section and then memory section.
+    - Check that on iPad Pro the logo and menu section share the same row.
+    - Make sure that no content gets squished or overlaps the main structure.
 2. Make sure that unnecessary text in the overlays disappears on phone devices.
-
 
 ## User testing
 The user testing is based on the user stories from the README file.
