@@ -214,7 +214,8 @@ left column the logo and menu section with some other main key features are plac
     - When the replay icon is clicked the page reload. This allows the player to restart the game whenever it's
     needed.
     - When the speaker icon is clicked, the background music starts playing. While the background music is playing you can
-    click on the speaker icon again to stop the music.
+    click on the speaker icon again to stop the music. When the speaker icon is being clicked, the icon changes
+    to mimic if the sound is playing or not.
     - When the questionmark icon is clicked a modal pops up with information about how to play the game. This modal can be closed
     in two ways, by clicking on the 'X' in the upper right corner, or clicking the 'Close' button on the bottom of the modal.
 
