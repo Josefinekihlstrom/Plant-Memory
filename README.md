@@ -42,9 +42,19 @@ this memory game.
 ## UX
 ### UX goals
 The UX goals is to provide the player with an inviting and responsive design. 
-With its simple structure this memory game will be easy for everyone to navigate through without 
+With its simple structure this memory game will be easy for everyone to navigate throughout without 
 unclear instructions, annoying audio effects and cluttered content. The main goal is to offer the player a relaxing 
-surrounding while practising their memory skills with the interactive features of this game. 
+surrounding while practising their memory skills with the interactive features of this game.
+
+#### The main UX goals
+* Clean and simple structure so that the player gets a good overwiev when first visiting the page.
+* Icons and buttons are large and communicates their purpose clearly.
+* The page has a good contrast between text and background.
+* The size of the text makes it easy to read.
+* The game includes a few but affirmative sound effects that tell the player the progress of the game while playing.
+* A soft color scheme.
+* Nicely illustrated pictures that fits the page and theme well.
+* An overall good feel of the structure and theme together.
 
 ### User stories
 I want to play a game...
