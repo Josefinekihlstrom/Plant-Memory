@@ -24,7 +24,7 @@
     - The two unused variables according to JSHint was the following:
         - playPause on line 57
         - restartGame on line 233
-    - These two are functions in the game, playPause to make it possible to play and pause the background music and
+    - These two are onClick functions in the game, playPause to make it possible to play and pause the background music and
     the restartGame to make it possible to reload the page when the player click on the replay icon. These cannot be
     remove since it will break these functions and therefor they must remain in the code.
 
@@ -55,6 +55,8 @@ All manual tests were done in the following browsers:
         - Verified by pressing the 'Start The Game' overlay that the cards are being reshuffled.
         - If a round has been played and finished before clicking the replay button, the time stamp from the last
         round appears in the menu section under the timer.
+        - If the dark theme was used before clicking the replay icon, the page reloads with the dark theme on.
+        - If the light theme was used before clicking the replay icon, the page reloads with the light theme on.
     - When clicking on the speaker icon the background music starts playing and the icon changes to a speaker icon that is playing sound.
         - When clicking the speaker icon again the music stops and the icon changes back to the initial state.
         - When background music is playing, the other sound effects aren't negatively affected.
@@ -71,9 +73,6 @@ All manual tests were done in the following browsers:
         - When clicking on the dark theme button the theme is switched to dark mode.
     - When dark theme is active the dark theme button is disabled.
         - When clicking on the light theme button the theme is switched to light mode.
-    - When the game is played with the dark theme and the replay button is clicked, the game goes back to its
-    initial state and light theme.
-    **This is noted as a bug in the 'Bugs found' section further down.**
 
 All of the above tests were done in the Google Chrome Device Toolbar on the following devices:
 
@@ -124,7 +123,7 @@ The user testing is based on the user stories from the README file.
     - When replaying the game you can se your previous time you finished the game in inside the menu section, 
     right under the timer.
 
-7. **..that I can come back to and play to get my mind off something. With a mindfulness aspect.**
+7. **..that I can come back to and play to get my mind off something.**
     - This user storie can be referenced with the answears from point number 3-5.
 
 8. **..that I can play to practise my memory skills.**
