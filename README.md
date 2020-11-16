@@ -108,28 +108,45 @@ I ended up on [Freepic.com](https://www.freepik.com/free-vector/potted-plants-se
 where I found the pictures of the plants that I ended up using. (They are credited in the credit section further down)
 - After that I turned to [Coolors](https://coolors.co/) to find colors that would match the theme of the page.
 I wanted to use a soft color scheme for the default theme and ended up with the following colors:
-![Color Palette](/assets/images/coolors.png)
+
+<div align="center">
+    <img src="/assets/images/coolors.png" alt="wireframe 1" width="600px">
+</div>
+
 - The logo was then made with the technology of [Free Lodge Design](https://www.freelogodesign.org).
 - The font that I decided to use throuought the project was [Amatic](https://fonts.google.com/specimen/Amatic+SC?query=amatic)
 
 ### Wireframes
-![wireframe1](/assets/wireframes/wireframe1.jpg)
-Before starting the memory game.
 
-![wireframe2](/assets/wireframes/wireframe2.jpg)
-Overlook of all card images that will be used.
+<div align="center">
+    <img src="/assets/wireframes/wireframe1.jpg" alt="wireframe 1" width="600px">
+</div>
+<p align="center">Before starting the memory game.</p>
 
-![wireframe3](/assets/wireframes/wireframe3.jpg)
-When finishing the game.
+<div align="center">
+    <img src="/assets/wireframes/wireframe2.jpg" alt="wireframe 1" width="600px">
+</div>
+<p align="center">Overlook of all card images that will be used.</p>
 
-![wireframe4](/assets/wireframes/wireframe4.jpg)
-Before starting the memory game **dark mode**.
+<div align="center">
+    <img src="/assets/wireframes/wireframe3.jpg" alt="wireframe 1" width="600px">
+</div>
+<p align="center">When finishing the game.</p>
 
-![wireframe5](/assets/wireframes/wireframe5.jpg)
-Overlook of all card images that will be used **dark mode**.
+<div align="center">
+    <img src="/assets/wireframes/wireframe4.jpg" alt="wireframe 1" width="600px">
+</div>
+<p align="center">Before starting the memory game - dark mode.</p>
 
-![wireframe6](/assets/wireframes/wireframe6.jpg)
-When finishing the game **dark mode**.
+<div align="center">
+    <img src="/assets/wireframes/wireframe5.jpg" alt="wireframe 1" width="600px">
+</div>
+<p align="center">Overlook of all card images that will be used - dark mode.</p>
+
+<div align="center">
+    <img src="/assets/wireframes/wireframe6.jpg" alt="wireframe 1" width="600px">
+</div>
+<p align="center">When finishing the game - dark mode.</p>
 
 ### Changes I made throuought the project
 - In the original idéa, as you can se in the wireframes. The third icon in the menu section is a 'step-forward' icon.
