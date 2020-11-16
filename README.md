@@ -119,32 +119,32 @@ I wanted to use a soft color scheme for the default theme and ended up with the 
 ### Wireframes
 
 <div align="center">
-    <img src="/assets/wireframes/wireframe1.jpg" alt="wireframe 1" width="600px">
+<img src="/assets/wireframes/wireframe1.jpg" alt="wireframe 1" width="600px">
 </div>
 <p align="center">Before starting the memory game.</p>
 
 <div align="center">
-    <img src="/assets/wireframes/wireframe2.jpg" alt="wireframe 1" width="600px">
+<img src="/assets/wireframes/wireframe2.jpg" alt="wireframe 2" width="600px">
 </div>
 <p align="center">Overlook of all card images that will be used.</p>
 
 <div align="center">
-    <img src="/assets/wireframes/wireframe3.jpg" alt="wireframe 1" width="600px">
+<img src="/assets/wireframes/wireframe3.jpg" alt="wireframe 3" width="600px">
 </div>
 <p align="center">When finishing the game.</p>
 
 <div align="center">
-    <img src="/assets/wireframes/wireframe4.jpg" alt="wireframe 1" width="600px">
+<img src="/assets/wireframes/wireframe4.jpg" alt="wireframe 4" width="600px">
 </div>
 <p align="center">Before starting the memory game - dark mode.</p>
 
 <div align="center">
-    <img src="/assets/wireframes/wireframe5.jpg" alt="wireframe 1" width="600px">
+<img src="/assets/wireframes/wireframe5.jpg" alt="wireframe 5" width="600px">
 </div>
 <p align="center">Overlook of all card images that will be used - dark mode.</p>
 
 <div align="center">
-    <img src="/assets/wireframes/wireframe6.jpg" alt="wireframe 1" width="600px">
+<img src="/assets/wireframes/wireframe6.jpg" alt="wireframe 6" width="600px">
 </div>
 <p align="center">When finishing the game - dark mode.</p>
 
@@ -184,10 +184,32 @@ left column the logo and menu section with some other main key features are plac
     match an encouraging sound effect plays.
     - When the player has matched all cards another overlay covers the memory section to indicate that the game
     is finished together with an audio playing.
+<br>
+<br>
+<div align="center">
+<img src="/assets/images/memory-game.png" alt="memory game" width="500px">
+</div>
+<br>
+<div align="center">
+<img src="/assets/images/memory-game-playing.png" alt="memory game playing" width="500px">
+</div>
+<br>
+<div align="center">
+<img src="/assets/images/memory-game-winning.png" alt="memory game winning" width="500px">
+</div>
+<br>
+<br>
 
 2. **The left side of the page**
     - The left side includes a logo together with the name of the game and a menu section that includes a replay
     icon, a speaker icon, a questionmark icon, a moves counter, a timer, the last round time and two theme buttons.
+
+<br>
+<br>
+<div align="center">
+<img src="/assets/images/left-side.png" alt="left side of page" width="400px">
+</div>
+<br>
 
 3. **Replay, Speaker and Questionmark Icons**
     - When the replay icon is clicked the page reload. This allows the player to restart the game whenever it's
@@ -196,6 +218,17 @@ left column the logo and menu section with some other main key features are plac
     click on the speaker icon again to stop the music.
     - When the questionmark icon is clicked a modal pops up with information about how to play the game. This modal can be closed
     in two ways, by clicking on the 'X' in the upper right corner, or clicking the 'Close' button on the bottom of the modal.
+
+<br>
+<br>
+<div align="center">
+<img src="/assets/images/speaker.png" alt="modal" width="400px">
+</div>
+<br>
+<div align="center">
+<img src="/assets/images/modal.png" alt="modal" width="400px">
+</div>
+<br>
 
 4. **Moves, Timer and Last Round**
     - The number next to the text 'Moves' indicates how many times the player has made a round of clicking two
@@ -207,6 +240,13 @@ left column the logo and menu section with some other main key features are plac
     next to the 'Last Round' text, the player must play one round and then click on the replay icon to see the time of
     the last round that is stored.
 
+<br>
+<br>
+<div align="center">
+<img src="/assets/images/moves-timer.png" alt="moves and timer" width="400px">
+</div>
+<br>
+
 5. **Theme Buttons**
     - The two buttons represents a theme each. When the player visits the page the first time the light theme is automatically
     showed which makes the 'Ligh Theme' button disabled.
@@ -215,6 +255,13 @@ left column the logo and menu section with some other main key features are plac
     Though the light theme is the default theme, both of the themes are locally stored. If the player decides 
     to refresh the page or click on the replay button while playing, the chosen theme from the previous session 
     will still be showing.
+
+<br>
+<br>
+<div align="center">
+<img src="/assets/images/dark-theme.png" alt="dark theme" width="600px">
+</div>
+<br>
 
 ### Features left to implement
 - **Add opportunity to change music during playing.** 
