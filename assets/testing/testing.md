@@ -2,6 +2,13 @@
 - [Go back to the project and README file](https://github.com/Josefinekihlstrom/Plant-Memory)
 - [Go to the Plant Memory live project here!](https://josefinekihlstrom.github.io/Plant-Memory/)
 
+## Content
+1. [Automated Testing](#automated-testing)
+2. [Manual Testing](#manual-testing)
+3. [User Testing](#user-testing)
+4. [Bugs found during development](#bugs-found-during-development)
+5. [Bugs found while testing manually](#bugs-found-while-testing-manually)
+
 ## Automated Testing
 - [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
     - This project passed the W3C CSS Validator without any remarks. 14th November - 2020
