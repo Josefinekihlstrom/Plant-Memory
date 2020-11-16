@@ -200,7 +200,7 @@ left column the logo and menu section with some other main key features are plac
 <br>
 
 2. **Logo and Menu Section**
-    - The logo and menu section includes a logo together with the name of the game and a menu section that includes a replay
+    - The logo and menu section includes a logo together with the name of the game and a menu that includes a replay
     icon, a speaker icon, a questionmark icon, a moves counter, a timer, the last round time and two theme buttons.
 
 <br>
