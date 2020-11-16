@@ -33,6 +33,7 @@ let themeLight = true;
 $("#light-theme").attr("disabled", "disabled");
 
 /* ---------- local storage ---------- */
+// coded with help from https://codetheweb.blog/javascript-localstorage/
 let localStorageBestTime = localStorage.getItem("lastRoundTime", timeHour.innerHTML);
 let localStorageTheme = localStorage.getItem("theme");
 
@@ -54,6 +55,7 @@ function checktheTheme() {
 }
 
 /* ---------- Play/pause music ---------- */
+// coded with help from https://www.youtube.com/watch?v=wffK2OIt8u0
 function playPause() {
     
     if(count === 0) {
@@ -113,10 +115,13 @@ function switchToLightTheme() {
 
 /* ---------- Starting the game ---------- */
 
-// When clicking on the play button the start-game div disappears
+// When clicking on the play button the start-game div disappears. 
+// coded with help from https://stackoverflow.com/questions/5299895/jquery-detecting-and-removing-an-element-clicked
+
 $(".start-game").on("click", function () {
   $(this).remove();
 
+    // timer coded with help from https://www.youtube.com/watch?v=_a4XCarxwr8
     const timeCounter = setInterval(() => {
     timeSecond++;
     displayTime(timeSecond);
@@ -136,6 +141,7 @@ function displayTime(second) {
 });
 
 /* ---------- Playing the game ---------- */
+// coded with help from https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae
 
 // flips the cards
 $(cards).on('click', function cardFlip() {
@@ -216,6 +222,7 @@ function boardReset() {
 }
 
 // count moves
+// coded with help from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves
  function countMoves() {
      moves++;
      counter.innerHTML = moves;
