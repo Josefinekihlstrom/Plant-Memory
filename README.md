@@ -55,6 +55,7 @@ surrounding while practising their memory skills with the interactive features o
 * A soft color scheme.
 * Nicely illustrated pictures that fits the page and theme well.
 * An overall good feel of the structure and theme together.
+* Responsiveness to all devices.
 
 ### User stories
 I want to play a game...
@@ -65,7 +66,7 @@ I want to play a game...
 4. ..that has a nice and clean design.
 5. ..that doesn't play too loud and stressing audio effects on everything I click.
 6. ..where I can see what my previous score was.
-7. ..that I can come back to and play to get my mind off something. With a mindfulness aspect.
+7. ..that I can come back to and play to get my mind off something.
 8. ..that I can play to practise my memory skills.
 9. ..that I can play at night with a darker theme.
 
@@ -153,26 +154,27 @@ to beat that last round time.
 
 ## Features
 The game page is sectioned into two columns. In the right column the actual memory game is based and in the
-left column the logo and Menu section with some other main key features are placed.
+left column the logo and menu section with some other main key features are placed.
 
-1. **The memory game column features**
-    - When you first arrive to the page, the memory column where the memory cards are placed has an overlay
+1. **The right side of the page**
+    - On the right side of the page the memory game is located.
+    - When you first arrive to the page, the memory section where the memory cards are placed has an overlay
     which activates the player to press the play button when they want to start the game.
     - The overlay also contains information that encourages the player to start the background music that will be
     played when pressing the speaker icon in the menu section.
     - When pressing the overlay the overlay disappers and the timer starts counting. The game is started.
     - When clicking the different cards an audio is played to indicate that the card is flipped. When two cards
     match an encouraging sound effect plays.
-    - When the player has matched all cards another overlay covers the memory column to indicate that the game
+    - When the player has matched all cards another overlay covers the memory section to indicate that the game
     is finished together with an audio playing.
 
-2. **Menu section**
-    - The Menu section includes a logo together with the name of the game and a menu section that includes a replay
+2. **The left side of the page**
+    - The left side includes a logo together with the name of the game and a menu section that includes a replay
     icon, a speaker icon, a questionmark icon, a moves counter, a timer, the last round time and two theme buttons.
 
 3. **Replay, Speaker and Questionmark Icons**
     - When the replay icon is clicked the page reload. This allows the player to restart the game whenever it's
-    needed. The game is always reloaded with the light theme.
+    needed.
     - When the speaker icon is clicked, the background music starts playing. While the background music is playing you can
     click on the speaker icon again to stop the music.
     - When the questionmark icon is clicked a modal pops up with information about how to play the game. This modal can be closed
@@ -185,7 +187,7 @@ left column the logo and Menu section with some other main key features are plac
     the timer is paused.
     - The timestamp next to the 'Last Round' text indicates the time that the player finished the game in the last round of 
     playing. This to encourage the player to try to beat that time in the ongoing round. If there's no timestamp
-    next to the 'Last Round' text, the player must play one round and then click on the reload icon to see the time of
+    next to the 'Last Round' text, the player must play one round and then click on the replay icon to see the time of
     the last round that is stored.
 
 5. **Theme Buttons**
@@ -195,7 +197,7 @@ left column the logo and Menu section with some other main key features are plac
     'Dark Theme' button disabled but not the 'Light Theme' button, this to indicate which theme is currently used.
     Though the light theme is the default theme, both of the themes are locally stored. If the player decides 
     to refresh the page or click on the replay button while playing, the chosen theme from the previous session 
-    will show.
+    will still be showing.
 
 ### Features left to implement
 - **Add opportunity to change music during playing.** 
@@ -205,7 +207,7 @@ songs. However due to lack of time of finding the perfect songs to match the gam
 leave this to hopefully add it in the future.
 
 - **Pause button to pause the game while playing.** 
-My mentor suggested that I would add a pause button for the player to be
+A suggestion was made that I would add a pause button for the player to be
 able to pause the game while playing. This was something I tried to add to the timer function but without a working result,
 I just simply couldn't get the function to pause the time as I wanted. So unfortunately I had to skip
 that idé and will hopefully try to make it in the future.

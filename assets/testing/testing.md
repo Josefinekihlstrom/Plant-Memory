@@ -22,8 +22,8 @@
     - The undefined variable in my script code was the '$' used for the jQuery code. This cannot be removed
     since it will break the jQuery code and the game would not work properly.
     - The two unused variables according to JSHint was the following:
-        - playPause on line 39
-        - restartGame on line 220
+        - playPause on line 57
+        - restartGame on line 233
     - These two are functions in the game, playPause to make it possible to play and pause the background music and
     the restartGame to make it possible to reload the page when the player click on the replay icon. These cannot be
     remove since it will break these functions and therefor they must remain in the code.
