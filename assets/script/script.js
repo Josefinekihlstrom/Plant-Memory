@@ -44,22 +44,12 @@ function checktheTheme() {
     if (localStorageTheme === "dark") {
 
        themeLight = false;
-
-       $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").addClass("dark-mode");
-        $(".card-back").attr("src", "assets/images/cardbackbeige.jpg");
-    
-        $("#light-theme").removeAttr("disabled");
-        $("#dark-theme").attr("disabled", "disabled");
+        switchToDarkTheme();
     }
     if (localStorageTheme === "light") {
 
         themeLight = true;
-
-        $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").removeClass("dark-mode");
-        $(".card-back").attr("src", "assets/images/cardbackgreen.jpg");
-
-        $("#dark-theme").removeAttr("disabled");
-        $("#light-theme").attr("disabled", "disabled");
+        switchToLightTheme();
     }
 }
 
@@ -90,12 +80,7 @@ $(function() {
 
     themeLight = false;
     localStorage.setItem("theme", "dark");
-
-    $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").addClass("dark-mode");
-    $(".card-back").attr("src", "assets/images/cardbackbeige.jpg");
-    
-    $("#light-theme").removeAttr("disabled");
-    $("#dark-theme").attr("disabled", "disabled");
+    switchToDarkTheme();
   });
 });
 
@@ -105,15 +90,26 @@ $(function () {
 
             themeLight = true;
             localStorage.setItem("theme", "light");
-
-            $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").removeClass("dark-mode");
-            $(".card-back").attr("src", "assets/images/cardbackgreen.jpg");
-
-            $("#dark-theme").removeAttr("disabled");
-            $("#light-theme").attr("disabled", "disabled");
+            switchToLightTheme();
         }
     });
 });
+
+function switchToDarkTheme() {
+    $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").addClass("dark-mode");
+    $(".card-back").attr("src", "assets/images/cardbackbeige.jpg");
+    
+    $("#light-theme").removeAttr("disabled");
+    $("#dark-theme").attr("disabled", "disabled");
+}
+
+function switchToLightTheme() {
+    $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").removeClass("dark-mode");
+    $(".card-back").attr("src", "assets/images/cardbackgreen.jpg");
+
+    $("#dark-theme").removeAttr("disabled");
+    $("#light-theme").attr("disabled", "disabled");
+}
 
 /* ---------- Starting the game ---------- */
 
