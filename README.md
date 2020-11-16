@@ -173,8 +173,7 @@ to beat that last round time.
 The game page is sectioned into two columns. In the right column the actual memory game is based and in the
 left column the logo and menu section with some other main key features are placed.
 
-1. **The right side of the page**
-    - On the right side of the page the memory game is located.
+1. **Memory game section**
     - When you first arrive to the page, the memory section where the memory cards are placed has an overlay
     which activates the player to press the play button when they want to start the game.
     - The overlay also contains information that encourages the player to start the background music that will be
@@ -200,8 +199,8 @@ left column the logo and menu section with some other main key features are plac
 <br>
 <br>
 
-2. **The left side of the page**
-    - The left side includes a logo together with the name of the game and a menu section that includes a replay
+2. **Logo and Menu Section**
+    - The logo and menu section includes a logo together with the name of the game and a menu section that includes a replay
     icon, a speaker icon, a questionmark icon, a moves counter, a timer, the last round time and two theme buttons.
 
 <br>
