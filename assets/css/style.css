@@ -1,6 +1,6 @@
 /* ---------- fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 .amatic {
     font-family: "Amatic SC", sans-serif;
 }
@@ -9,24 +9,32 @@
     margin: 0 auto;
 }
 
+
 /* ---------- body ---------- */
+
 body {
     background-color: #dbcbbd;
     height: 100vh;
     display: flex;
 }
 
+
 /* ---------- container ---------- */
+
 .container {
     margin: auto;
 }
 
+
 /* ---------- columns ---------- */
+
 .column-padding {
     padding: 20px;
 }
 
+
 /* logo */
+
 .logo {
     height: 250px;
     padding: 20px;
@@ -45,7 +53,9 @@ body {
     margin-right: auto;
 }
 
+
 /* ---------- high score section ---------- */
+
 .high-score {
     height: 310px;
     padding: 20px;
@@ -61,7 +71,7 @@ body {
     font-size: 32px;
     margin-bottom: 20px;
     display: inline-block;
-    text-align:center;
+    text-align: center;
     width: 100%;
 }
 
@@ -76,7 +86,7 @@ body {
 
 .theme-buttons {
     display: inline-block;
-    text-align:center;
+    text-align: center;
     width: 100%;
 }
 
@@ -90,6 +100,7 @@ body {
 .btn-light:hover {
     background-color: #DBCBBD!important;
 }
+
 .btn-light:disabled,
 btn-light[disabled] {
     background-color: #DBCBBD!important;
@@ -110,7 +121,9 @@ btn-dark[disabled] {
     background-color: #14110f!important;
 }
 
+
 /* ---------- modal ---------- */
+
 .modal-title {
     font-size: 55px;
 }
@@ -120,6 +133,7 @@ btn-dark[disabled] {
     letter-spacing: 2px;
     background-color: #14110f;
 }
+
 
 /* ---------- memory ---------- */
 
@@ -131,7 +145,9 @@ btn-dark[disabled] {
     transform: rotateY(180deg);
 }
 
+
 /* ---------- start game overlay ---------- */
+
 .start-game {
     position: absolute;
     top: 50%;
@@ -146,7 +162,6 @@ btn-dark[disabled] {
 .play-button {
     text-align: center;
     margin-top: 120px;
-    
 }
 
 .play-button h2 {
@@ -161,7 +176,9 @@ btn-dark[disabled] {
     font-size: 150px;
 }
 
+
 /* ---------- memory game ---------- */
+
 .memory-game {
     height: 560px;
     width: 565px;
@@ -199,14 +216,17 @@ btn-dark[disabled] {
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /* webkit to support the hidden backface in safari */
+    -webkit-backface-visibility: hidden;
+    /* webkit to support the hidden backface in safari */
 }
 
 .card-front {
     transform: rotateY(180deg);
 }
 
+
 /* ---------- game finished overlay ---------- */
+
 .overlay-finish {
     position: absolute;
     top: 50%;
@@ -223,6 +243,7 @@ btn-dark[disabled] {
     font-size: 150px;
 }
 
+
 /* ---------- dark theme ---------- */
 
 .memory-game.dark-mode {
@@ -230,7 +251,7 @@ btn-dark[disabled] {
 }
 
 body.dark-mode {
-  background: #14110f;
+    background: #14110f;
 }
 
 .logo.dark-mode {
@@ -256,12 +277,12 @@ body.dark-mode {
     color: #f7f4f3;
 }
 
+
 /* ---------- media query ---------- */
 
 @media (max-width: 1200px) {
-
     .row {
-       display: flex; 
+        display: flex;
     }
 
     .logo {
@@ -276,7 +297,6 @@ body.dark-mode {
 }
 
 @media (max-width: 768px) {
-
     .logo {
         float: none;
         width: 565px;
@@ -289,7 +309,6 @@ body.dark-mode {
 }
 
 @media (max-width: 480px) {
-
     /* logo and high score section */
     .logo {
         width: 295px;
@@ -333,7 +352,7 @@ body.dark-mode {
     /* start game overlay */
     .start-game {
         height: 300px;
-        width: 295px; 
+        width: 295px;
     }
 
     .play-button {
@@ -358,9 +377,8 @@ body.dark-mode {
     .fa-trophy {
         font-size: 100px;
     }
-
+    
     /* modal */
-
     .modal-title {
         font-size: 35px;
     }
