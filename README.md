@@ -51,7 +51,7 @@ surrounding while practising their memory skills with the interactive features o
 * Icons and buttons are large and communicates their purpose clearly.
 * The page has a good contrast between text and background.
 * The size of the text makes it easy to read.
-* The game includes a few but affirmative sound effects that tell the player the progress of the game while playing.
+* Include a few but affirmative sound effects that tell the player the progress of the game while playing.
 * A soft color scheme.
 * Nicely illustrated pictures that fits the page and theme well.
 * An overall good feel of the structure and theme together.
