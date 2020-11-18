@@ -33,7 +33,7 @@
         - restartGame on line 233
     - These two are onClick functions in the game, playPause to make it possible to play and pause the background music and
     the restartGame to make it possible to reload the page when the player click on the replay icon. These cannot be
-    remove since it will break these functions and therefor they must remain in the code.
+    removed since it will break these functions and therefor they must remain in the code.
 
 ## Manual testing
 All manual tests were done in the following browsers:
@@ -49,7 +49,7 @@ All manual tests were done in the following browsers:
     - When clicking the first card, sound effect fires and the card stays flipped.
     - When clicking the second card, second card flips and sound effect fires:
         - If match: Both cards stays flipped and a sound effect fires. Moves counter adds one.
-        - It no match: Both cards unflip and sound effect fires. Moves counter adds one.
+        - If no match: Both cards unflip and sound effect fires. Moves counter adds one.
     - When clicking on a third card before unmatched cards unflip, the board is locked.
     - When clicking on the first card after it's already been clicked, it still counts as first card and does
     not affect when the second card is getting clicked.
