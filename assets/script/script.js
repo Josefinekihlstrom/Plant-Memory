@@ -43,7 +43,7 @@ window.onload = checktheTheme();
 
 function checktheTheme() {
     if (localStorageTheme === "dark") {
-       themeLight = false;
+        themeLight = false;
         switchToDarkTheme();
     }
     if (localStorageTheme === "light") {
@@ -54,8 +54,8 @@ function checktheTheme() {
 
 /* ---------- Play/pause music ---------- */
 // coded with help from https://www.youtube.com/watch?v=wffK2OIt8u0
-function playPause() {  
-    if(count === 0) {
+function playPause() {
+    if (count === 0) {
         count = 1;
         backgroundAudio.play();
         playPauseIcon.className = "fas fa-volume-up";
@@ -66,7 +66,7 @@ function playPause() {
     }
 }
 /* ---------- How to play modal ---------- */
-$("#how-to").click(function() {
+$("#how-to").click(function () {
     $("#myModal").modal('show');
 });
 
@@ -74,8 +74,8 @@ $("#how-to").click(function() {
 $("#highscore").text(localStorageBestTime);
 
 /* ---------- Theme buttons ---------- */
-$(function() {
-    $("#dark-theme").click(function() {
+$(function () {
+    $("#dark-theme").click(function () {
         themeLight = false;
         localStorage.setItem("theme", "dark");
         switchToDarkTheme();
@@ -83,7 +83,7 @@ $(function() {
 });
 
 $(function () {
-    $("#light-theme").click(function() {
+    $("#light-theme").click(function () {
         if (themeLight == false) {
             themeLight = true;
             localStorage.setItem("theme", "light");
@@ -118,16 +118,16 @@ $(".start-game").on("click", function () {
         timeSecond++;
         displayTime(timeSecond);
         if (matches == 8) {
-        clearInterval(timeCounter);
-        localStorage.setItem("lastRoundTime", timeHour.innerHTML);
-    }
-},1000);
+            clearInterval(timeCounter);
+            localStorage.setItem("lastRoundTime", timeHour.innerHTML);
+        }
+    }, 1000);
 
-function displayTime(second) {
-    const min = Math.floor(second / 60);
-    const sec = Math.floor(second % 60);
-    timeHour.innerHTML = `${min < 10 ? '0' : ''}${min}:${sec < 10 ? '0' : ''}${sec}`;
-}
+    function displayTime(second) {
+        const min = Math.floor(second / 60);
+        const sec = Math.floor(second % 60);
+        timeHour.innerHTML = `${min < 10 ? '0' : ''}${min}:${sec < 10 ? '0' : ''}${sec}`;
+    }
 });
 
 /* ---------- Playing the game ---------- */
@@ -161,7 +161,7 @@ function checkMatch() {
         matchCardAudio.play();
         matchCardAudio.currentTime = 0;
         matches = matches + 1;
-        if (matches == 8) { 
+        if (matches == 8) {
             gameFinished();
         }
         disableCards();
@@ -199,10 +199,10 @@ function boardReset() {
 
 // count moves
 // coded with help from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves
- function countMoves() {
-     moves++;
-     counter.innerHTML = moves;
- }
+function countMoves() {
+    moves++;
+    counter.innerHTML = moves;
+}
 
 // shuffels cards
 (function shuffleCards() {
