@@ -28,6 +28,7 @@ timeHour.innerHTML = `00:0${timeSecond}`;
 /* ---------- counting moves variables ---------- */
 let counter = document.getElementById('moves');
 var moves = 0;
+
 /* ---------- theme variable ---------- */
 let themeLight = true;
 $("#light-theme").attr("disabled", "disabled");
@@ -41,14 +42,11 @@ let localStorageTheme = localStorage.getItem("theme");
 window.onload = checktheTheme();
 
 function checktheTheme() {
-
     if (localStorageTheme === "dark") {
-
        themeLight = false;
         switchToDarkTheme();
     }
     if (localStorageTheme === "light") {
-
         themeLight = true;
         switchToLightTheme();
     }
@@ -56,8 +54,7 @@ function checktheTheme() {
 
 /* ---------- Play/pause music ---------- */
 // coded with help from https://www.youtube.com/watch?v=wffK2OIt8u0
-function playPause() {
-    
+function playPause() {  
     if(count === 0) {
         count = 1;
         backgroundAudio.play();
@@ -78,18 +75,16 @@ $("#highscore").text(localStorageBestTime);
 
 /* ---------- Theme buttons ---------- */
 $(function() {
-  $("#dark-theme").click(function() {
-
-    themeLight = false;
-    localStorage.setItem("theme", "dark");
-    switchToDarkTheme();
-  });
+    $("#dark-theme").click(function() {
+        themeLight = false;
+        localStorage.setItem("theme", "dark");
+        switchToDarkTheme();
+    });
 });
 
 $(function () {
     $("#light-theme").click(function() {
         if (themeLight == false) {
-
             themeLight = true;
             localStorage.setItem("theme", "light");
             switchToLightTheme();
@@ -100,7 +95,6 @@ $(function () {
 function switchToDarkTheme() {
     $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").addClass("dark-mode");
     $(".card-back").attr("src", "assets/images/cardbackbeige.jpg");
-    
     $("#light-theme").removeAttr("disabled");
     $("#dark-theme").attr("disabled", "disabled");
 }
@@ -108,7 +102,6 @@ function switchToDarkTheme() {
 function switchToLightTheme() {
     $("body, .logo, .logo h1, .high-score, .memory-game, .start-game, .overlay-finish").removeClass("dark-mode");
     $(".card-back").attr("src", "assets/images/cardbackgreen.jpg");
-
     $("#dark-theme").removeAttr("disabled");
     $("#light-theme").attr("disabled", "disabled");
 }
@@ -119,14 +112,12 @@ function switchToLightTheme() {
 // coded with help from https://stackoverflow.com/questions/5299895/jquery-detecting-and-removing-an-element-clicked
 
 $(".start-game").on("click", function () {
-  $(this).remove();
-
+    $(this).remove();
     // timer coded with help from https://www.youtube.com/watch?v=_a4XCarxwr8
     const timeCounter = setInterval(() => {
-    timeSecond++;
-    displayTime(timeSecond);
-    
-    if (matches == 8) {
+        timeSecond++;
+        displayTime(timeSecond);
+        if (matches == 8) {
         clearInterval(timeCounter);
         localStorage.setItem("lastRoundTime", timeHour.innerHTML);
     }
@@ -137,7 +128,6 @@ function displayTime(second) {
     const sec = Math.floor(second % 60);
     timeHour.innerHTML = `${min < 10 ? '0' : ''}${min}:${sec < 10 ? '0' : ''}${sec}`;
 }
-
 });
 
 /* ---------- Playing the game ---------- */
@@ -145,47 +135,36 @@ function displayTime(second) {
 
 // flips the cards
 $(cards).on('click', function cardFlip() {
-
     clickAudio.play();
     clickAudio.currentTime = 0;
-    
     // lock the board if true
     if (boardLocked) return;
     // to avoid dubble click on first card
     if (this === firstCard) return;
-
     $(this).addClass('flip');
-
     if (!cardIsFlipped) {
         // the first card is clicked
         cardIsFlipped = true;
         firstCard = this;
-
         return;
     }
-        // the second card is clicked
-        secondCard = this;
-
-        checkMatch();
-        countMoves();
+    // the second card is clicked
+    secondCard = this;
+    checkMatch();
+    countMoves();
 });
 
 // checks for cards to match
 function checkMatch() {
-
     // if cards match go to disableCards function
     if (firstCard.dataset.id === secondCard.dataset.id) {
         matchCardAudio.play();
         matchCardAudio.currentTime = 0;
-
         matches = matches + 1;
-
         if (matches == 8) { 
             gameFinished();
         }
-
         disableCards();
-
     } else {
         // if cards don't match go to unflipCards function
         unflipCards();
@@ -196,18 +175,15 @@ function checkMatch() {
 function disableCards() {
     $(firstCard).off('click', cardIsFlipped);
     $(secondCard).off('click', cardIsFlipped);
-
     boardReset();
 }
 
 // flip cards back
 function unflipCards() {
     boardLocked = true;
-
     setTimeout(() => {
         $(firstCard).removeClass('flip');
         $(secondCard).removeClass('flip');
-
         clickAudio.play();
         boardReset();
     }, 1200);
@@ -245,7 +221,6 @@ function restartGame() {
 function gameFinished() {
     winAudio.play();
     $('.overlay-finish').show();
-
     if (count === 1) {
         count = 0;
         backgroundAudio.pause();
