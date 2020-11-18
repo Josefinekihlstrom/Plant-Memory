@@ -1,199 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Head -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plant Memory</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    <!-- Head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plant Memory</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
             type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-</head>
-<!-- body -->
-<body>
-
-<div class="container">
-    <div class="row">
-    <!-- logo and high score section -->
-        <div class="col-xlg-5 column-padding">
-        <!-- logo and h1 -->
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="logo">
-                <h1 class="amatic">Plant Memory</h1>
-            </div>
-            <!-- high score section -->
-            <div class="high-score">
-            <!-- fontawesome icons -->
-                <div class="icons">
-                    <i class="fas fa-undo" onclick="restartGame()"></i>
-                    <i class="fas fa-volume-mute" id="play-pause" onclick="playPause()"></i>
-                    <i class="fas fa-question" id="how-to"></i>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    </head>
+    <!-- body -->
+    <body>
+        <div class="container">
+            <div class="row">
+                <!-- logo and high score section -->
+                <div class="col-xlg-5 column-padding">
+                    <!-- logo and h1 -->
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="logo">
+                        <h1 class="amatic">Plant Memory</h1>
+                    </div>
+                    <!-- high score section -->
+                    <div class="high-score">
+                        <!-- fontawesome icons -->
+                        <div class="icons">
+                            <i class="fas fa-undo" onclick="restartGame()"></i>
+                            <i class="fas fa-volume-mute" id="play-pause" onclick="playPause()"></i>
+                            <i class="fas fa-question" id="how-to"></i>
+                        </div>
+                        <!-- moves and high score -->
+                        <div class="moves-high-score">
+                            <p class="amatic">Moves: <span id="moves">0</span></p>
+                            <p class="amatic time">Timer: <span id="timer">00:00</span></p>
+                            <p class="amatic">Last Round: <span id="highscore">0</span></p>
+                        </div>
+                        <!-- ligh/dark theme buttons -->
+                        <div class="theme-buttons">
+                            <button type="button" class="btn btn-light amatic" id="light-theme">Light Theme</button>
+                            <button type="button" class="btn btn-dark amatic" id="dark-theme">Dark Theme</button>
+                        </div>
+                    </div>
                 </div>
-                <!-- moves and high score -->
-                <div class="moves-high-score">
-                    <p class="amatic">Moves: <span id="moves">0</span></p>
-                    <p class="amatic time">Timer: <span id="timer">00:00</span></p>
-                    <p class="amatic">Last Round: <span id="highscore">0</span></p>
-                </div>
-                <!-- ligh/dark theme buttons -->
-                <div class="theme-buttons">
-                    <button type="button" class="btn btn-light amatic" id="light-theme">Light Theme</button>
-                    <button type="button" class="btn btn-dark amatic" id="dark-theme">Dark Theme</button>
+                <!-- memory game section -->
+                <div class="col-xlg-7 column-padding game-section">
+                    <div class="overlay-start start-game">
+                        <!-- play button overlay -->
+                        <div class="play-button">
+                            <i class="far fa-play-circle"></i>
+                            <h2 class="amatic">Start the game</h2>
+                            <br>
+                            <br>
+                            <h3 class="amatic d-none d-sm-block">
+                                Turn on the jazzy background 
+                                <br>
+                                music by clicking on the speaker icon in the menu!
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="overlay-finish game-finished">
+                        <!-- game finished overlay -->
+                        <div class="play-button">
+                            <i class="fas fa-trophy"></i>
+                            <h2 class="amatic">Congratulations!</h2>
+                            <h3 class="amatic d-none d-sm-block">To play again, press the replay icon in the menu.</h3>
+                        </div>
+                    </div>
+                    <div class="memory-game">
+                        <!-- card 1 duo -->
+                        <div class="memory-card" data-id="plant1">
+                            <img class="card-front" src="assets/images/plant1.jpg" alt="Plant 1">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <div class="memory-card" data-id="plant1">
+                            <img class="card-front" src="assets/images/plant1.jpg" alt="Plant 1">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <!-- card 2 duo -->
+                        <div class="memory-card" data-id="plant2">
+                            <img class="card-front" src="assets/images/plant2.jpg" alt="Plant 2">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <div class="memory-card" data-id="plant2">
+                            <img class="card-front" src="assets/images/plant2.jpg" alt="Plant 2">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <!-- card 3 duo -->
+                        <div class="memory-card" data-id="plant3">
+                            <img class="card-front" src="assets/images/plant3.jpg" alt="Plant 3">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <div class="memory-card" data-id="plant3">
+                            <img class="card-front" src="assets/images/plant3.jpg" alt="Plant 3">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <!-- card 4 duo -->
+                        <div class="memory-card" data-id="plant4">
+                            <img class="card-front" src="assets/images/plant4.jpg" alt="Plant 4">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <div class="memory-card" data-id="plant4">
+                            <img class="card-front" src="assets/images/plant4.jpg" alt="Plant 4">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <!-- card 5 duo -->
+                        <div class="memory-card" data-id="plant5">
+                            <img class="card-front" src="assets/images/plant5.jpg" alt="Plant 5">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <div class="memory-card" data-id="plant5">
+                            <img class="card-front" src="assets/images/plant5.jpg" alt="Plant 5">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <!-- card 6 duo -->
+                        <div class="memory-card" data-id="plant6">
+                            <img class="card-front" src="assets/images/plant6.jpg" alt="Plant 6">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <div class="memory-card" data-id="plant6">
+                            <img class="card-front" src="assets/images/plant6.jpg" alt="Plant 6">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <!-- card 7 duo -->
+                        <div class="memory-card" data-id="plant7">
+                            <img class="card-front" src="assets/images/plant7.jpg" alt="Plant 7">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <div class="memory-card" data-id="plant7">
+                            <img class="card-front" src="assets/images/plant7.jpg" alt="Plant 7">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <!-- card 8 duo -->
+                        <div class="memory-card" data-id="plant8">
+                            <img class="card-front" src="assets/images/plant8.jpg" alt="Plant 8">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                        <div class="memory-card" data-id="plant8">
+                            <img class="card-front" src="assets/images/plant8.jpg" alt="Plant 8">
+                            <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- memory game section -->
-        <div class="col-xlg-7 column-padding game-section">
-            <div class="overlay-start start-game">
-                <!-- play button overlay -->
-                <div class="play-button">
-                    <i class="far fa-play-circle"></i>
-                    <h2 class="amatic">Start the game</h2>
-                    <br>
-                    <br>
-                    <h3 class="amatic d-none d-sm-block">
-                        Turn on the jazzy background 
+        <!-- how to play modal -->
+        <div class="modal" tabindex="-1" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title amatic">How do I play memory?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>*Note that if the game is already started when this information shows, the timer will continnue to run.
+                            Consider restarting the game if you don't want this to affect your time.</strong>
+                        </p>
                         <br>
-                        music by clicking on the speaker icon in the menu!
-                    </h3>
+                        <p>- There are 8 pairs of plant cards in this game. The player gets to choose two cards by clicking on them
+                            and the cards will turn over.
+                        </p>
+                        <p>- If the two cards are the same you've found a match. If the two cards are not the same the cards
+                            will turn back over.
+                        </p>
+                        <p>- Try to remember the cards that got turned back over and find all pairs.</p>
+                        <p>- The game is over when all cards are matched and a victory screen will appear.</p>
+                        <p>Good luck!</p>
+                        <br>
+                        <br>
+                        <p><strong>© Josefine Kihlström - 2020</strong></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary amatic close-button" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-            </div>
-            <div class="overlay-finish game-finished">
-                <!-- game finished overlay -->
-                <div class="play-button">
-                    <i class="fas fa-trophy"></i>
-                    <h2 class="amatic">Congratulations!</h2>
-                    <h3 class="amatic d-none d-sm-block">To play again, press the replay icon in the menu.</h3>
-                </div>
-            </div>
-            <div class="memory-game">
-                <!-- card 1 duo -->
-                <div class="memory-card" data-id="plant1">
-                    <img class="card-front" src="assets/images/plant1.jpg" alt="Plant 1">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-                <div class="memory-card" data-id="plant1">
-                    <img class="card-front" src="assets/images/plant1.jpg" alt="Plant 1">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-                <!-- card 2 duo -->
-                <div class="memory-card" data-id="plant2">
-                    <img class="card-front" src="assets/images/plant2.jpg" alt="Plant 2">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-                <div class="memory-card" data-id="plant2">
-                    <img class="card-front" src="assets/images/plant2.jpg" alt="Plant 2">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-
-                <!-- card 3 duo -->
-                <div class="memory-card" data-id="plant3">
-                    <img class="card-front" src="assets/images/plant3.jpg" alt="Plant 3">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-                <div class="memory-card" data-id="plant3">
-                    <img class="card-front" src="assets/images/plant3.jpg" alt="Plant 3">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-
-                <!-- card 4 duo -->
-                <div class="memory-card" data-id="plant4">
-                    <img class="card-front" src="assets/images/plant4.jpg" alt="Plant 4">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-                <div class="memory-card" data-id="plant4">
-                    <img class="card-front" src="assets/images/plant4.jpg" alt="Plant 4">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-
-                <!-- card 5 duo -->
-                <div class="memory-card" data-id="plant5">
-                    <img class="card-front" src="assets/images/plant5.jpg" alt="Plant 5">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-                <div class="memory-card" data-id="plant5">
-                    <img class="card-front" src="assets/images/plant5.jpg" alt="Plant 5">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-
-                <!-- card 6 duo -->
-                <div class="memory-card" data-id="plant6">
-                    <img class="card-front" src="assets/images/plant6.jpg" alt="Plant 6">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-                <div class="memory-card" data-id="plant6">
-                    <img class="card-front" src="assets/images/plant6.jpg" alt="Plant 6">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-
-                <!-- card 7 duo -->
-                <div class="memory-card" data-id="plant7">
-                    <img class="card-front" src="assets/images/plant7.jpg" alt="Plant 7">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-                <div class="memory-card" data-id="plant7">
-                    <img class="card-front" src="assets/images/plant7.jpg" alt="Plant 7">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-
-                <!-- card 8 duo -->
-                <div class="memory-card" data-id="plant8">
-                    <img class="card-front" src="assets/images/plant8.jpg" alt="Plant 8">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-                <div class="memory-card" data-id="plant8">
-                    <img class="card-front" src="assets/images/plant8.jpg" alt="Plant 8">
-                    <img class="card-back" src="assets/images/cardbackgreen.jpg" alt="Card Back">
-                </div>
-
             </div>
         </div>
-    </div>
-</div>
-
-<!-- how to play modal -->
-<div class="modal" tabindex="-1" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title amatic">How do I play memory?</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p><strong>*Note that if the game is already started when this information shows, the timer will continnue to run.
-        Consider restarting the game if you don't want this to affect your time.</strong></p>
-        <br>
-        <p>- There are 8 pairs of plant cards in this game. The player gets to choose two cards by clicking on them
-        and the cards will turn over.</p>
-        <p>- If the two cards are the same you've found a match. If the two cards are not the same the cards
-        will turn back over.</p>
-        <p>- Try to remember the cards that got turned back over and find all pairs.</p>
-        <p>- The game is over when all cards are matched and a victory screen will appear.</p>
-        <p>Good luck!</p>
-        <br>
-        <br>
-        <p><strong>© Josefine Kihlström - 2020</strong></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary amatic close-button" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="assets/script/script.js"></script>
-</body>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="assets/script/script.js"></script>
+    </body>
 </html>
