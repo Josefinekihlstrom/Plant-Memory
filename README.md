@@ -78,25 +78,24 @@ The strategy plane was based on the user stories above.
 
 2. **Scope plane** 
 The main feature was going to be the memory game itself alongside with some other features, such as 
-a 'high score list' with locally scored high scores, a timer, smooth sound effects that indicate if you 
+a menu with locally scored game score, a timer, smooth sound effects that indicate if you 
 get a match or not
 and the option to play some jazzy background music (that you also can turn off).
 I also wanted the overall relaxing theme for the game to reflect through the images that I was going
 to use for the cards. In this stage the images was not decided yet.
 
 3. **Structure plane** 
-When the key features was set the structure plane was pretty simple. I was going to have just a single page with
+When the key features were set the structure plane was pretty simple. I was going to have just a single page with
 all the features in it but divided into different sections to make out the most of it and get a nice balance. 
 My initial structure is based out of squares (that represents different divs) with information in each that would 
 be placed within the main square (the viewport). 
-One square would contain the icon and the name of the game, another square would contain the menu with
-the interaction functions and then the last square would be the memory game itself with its own overlay 
-features.
+One square would contain the icon and the name of the game, another square would contain the menu and then 
+the last square would be the memory game itself with its own overlay features.
 
 4. **Skeleton plane**
 I started sketching out what the layout would be like and got the balance of the page together by dividing 
 it into two main columns of the page. The right column of the page was going to cover the majority of the
-page with the memory game feature. In the left section I wanted to add the logo and header in one div together 
+page with the memory game feature. In the left column I wanted to add the logo and header in one div together 
 with the menu and its different features. This would be the buttons, icons and timer display and locally stored
 score for the game.
 I didn't want the left section to be left out entirely and decided to give it the space that it needed to 
@@ -170,7 +169,7 @@ This way, for those who are a little bit more competitive, it would encourage th
 to beat that last round time.
 
 ## Features
-The game page is sectioned into two columns. In the right column the actual memory game is based and in the
+The page is sectioned into two columns. In the right column the actual memory game is based and in the
 left column the logo and menu section with some other main key features are placed.
 
 1. **Memory game section**
